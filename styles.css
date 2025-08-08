@@ -1620,6 +1620,26 @@ td {
     }
 }
 
+/* Küçük telefonlar: menü her zaman görünür (yatay kaydırmalı) */
+@media (max-width: 640px) {
+    .nav-container { flex-wrap: wrap; height: auto; padding-top: 6px; padding-bottom: 6px; }
+    .hamburger { display: none !important; }
+    .nav-menu {
+        position: static;
+        left: auto; top: auto;
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-start;
+        gap: 1rem;
+        padding-top: 6px;
+        overflow-x: auto;
+        background: transparent;
+    }
+    .nav-menu.active { left: auto; }
+    .nav-menu::-webkit-scrollbar{ display:none; }
+    .nav-link{ font-size: .95rem; white-space: nowrap; padding: 6px 2px; }
+}
+
 @media (max-width: 480px) {
     .container {
         padding: 0 15px;
