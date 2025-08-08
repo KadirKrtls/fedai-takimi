@@ -1428,27 +1428,28 @@ td {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Navbar mobilde tek satır + linkler aşağıda görünür */
+    .nav-container { flex-wrap: wrap; }
+
     .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.9);
+        position: static;
+        left: auto;
+        top: auto;
+        flex-direction: row;
+        background: transparent;
         width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        padding: 2rem 0;
+        justify-content: space-between;
+        transition: none;
+        box-shadow: none;
+        padding: 8px 0 0;
+        gap: 1rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
-    .nav-menu.active {
-        left: 0;
-    }
+    .nav-menu::-webkit-scrollbar { display: none; }
 
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
+    .hamburger { display: none; }
 
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
