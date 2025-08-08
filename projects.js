@@ -14,7 +14,7 @@ const projectData = {
             { label: 'GPS Hassasiyeti', value: '±1m' }
         ],
         gallery: [
-            'images/fedai-takim-lab.jpeg?v=20250808',
+            'images/fedai-takim-lab.jpeg?v=20250809',
             'images/fedai-iha-montaj-calismasi.png?v=20250808',
             'images/fedai-iha-model-sergisi.png?v=20250808'
         ]
@@ -34,7 +34,7 @@ const projectData = {
         ],
         gallery: [
             'images/fedai-iha-model-sergisi.png?v=20250808',
-            'images/fedai-takim-lab.jpeg?v=20250808',
+            'images/fedai-takim-lab.jpeg?v=20250809',
             'images/fedai-iha-montaj-calismasi.png?v=20250808'
         ]
     },
@@ -53,7 +53,7 @@ const projectData = {
         ],
         gallery: [
             'images/fedai-iha-montaj-calismasi.png?v=20250808',
-            'images/fedai-takim-lab.jpeg?v=20250808',
+            'images/fedai-takim-lab.jpeg?v=20250809',
             'images/fedai-iha-model-sergisi.png?v=20250808'
         ]
     },
@@ -72,7 +72,7 @@ const projectData = {
         ],
         gallery: [
             'images/fedai-iha-model-sergisi.png?v=20250808',
-            'images/fedai-takim-lab.jpeg?v=20250808',
+            'images/fedai-takim-lab.jpeg?v=20250809',
             'images/fedai-iha-montaj-calismasi.png?v=20250808'
         ]
     },
@@ -91,7 +91,7 @@ const projectData = {
         ],
         gallery: [
             'images/fedai-iha-montaj-calismasi.png?v=20250808',
-            'images/fedai-takim-lab.jpeg?v=20250808',
+            'images/fedai-takim-lab.jpeg?v=20250809',
             'images/fedai-iha-model-sergisi.png?v=20250808'
         ]
     },
@@ -110,7 +110,7 @@ const projectData = {
         ],
         gallery: [
             'images/fedai-okul-etkinligi-1.jpeg',
-            'images/fedai-takim-lab.jpeg?v=20250808',
+            'images/fedai-takim-lab.jpeg?v=20250809',
             'images/fedai-iha-model-sergisi.png?v=20250808'
         ]
     }
