@@ -2494,11 +2494,16 @@ td {
 /* Görsel optimizasyonu */
 .project-img,
 .nav-logo-img,
-.footer-logo-img,
-.slide {
+.footer-logo-img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+/* Slider görselleri arka plan olduğu için yüksekliği koru */
+.slide {
+    background-size: cover;
+    background-position: center;
 }
 
 /* Responsive görsel boyutları */
