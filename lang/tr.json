@@ -124,9 +124,9 @@
     "unit": "Birim",
     "year": "Yıl"
   },
-  "blog": {
-    "title": "Son Gelişmeler",
-    "subtitle": "Fedai Takımı'nın en son haberleri ve projeleri"
+  "news": {
+    "title": "Haberler ve Gelişmeler",
+    "subtitle": "Fedai Takımı'nın en son haberleri, başarıları ve etkinlikleri"
   },
   "sponsors": {
     "title": "Sponsorlarımız ve Partnerlerimiz",

@@ -124,9 +124,9 @@
     "unit": "Unit",
     "year": "Year"
   },
-  "blog": {
-    "title": "Latest News",
-    "subtitle": "Latest news and projects of Fedai Team"
+  "news": {
+    "title": "News and Developments",
+    "subtitle": "Latest news, achievements and events from Fedai Team"
   },
   "sponsors": {
     "title": "Our Sponsors and Partners",
