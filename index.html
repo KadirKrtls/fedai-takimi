@@ -37,6 +37,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Skip to content link -->
+    <a href="#main-content" class="skip-link">Ana içeriğe geç</a>
+    
     <!-- Loading Spinner -->
     <div class="loading-spinner" id="loadingSpinner">
         <div class="spinner"></div>
@@ -65,18 +68,18 @@
                 <div class="search-results" id="searchResults"></div>
             </div>
             <div class="language-switcher">
-                <button class="language-btn" id="languageBtn" aria-expanded="false" aria-controls="languageDropdown">
-                    <img src="assets/icons/tr.svg" alt="Turkish" class="flag-icon">
+                <button class="language-btn" id="languageBtn" aria-expanded="false" aria-controls="languageDropdown" aria-label="Dil seçeneklerini göster">
+                    <img src="assets/icons/tr.svg" alt="Türkçe bayrağı" class="flag-icon">
                     <span class="language-text">TR</span>
-                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
                 </button>
                 <div class="language-dropdown" id="languageDropdown">
                     <div class="language-option active" data-lang="tr" aria-current="true">
-                        <img src="assets/icons/tr.svg" alt="Turkish" class="flag-icon">
+                        <img src="assets/icons/tr.svg" alt="Türkçe bayrağı" class="flag-icon">
                         <span class="language-text">Türkçe</span>
                     </div>
                     <div class="language-option" data-lang="en">
-                        <img src="assets/icons/en.svg" alt="English" class="flag-icon">
+                        <img src="assets/icons/en.svg" alt="İngilizce bayrağı" class="flag-icon">
                         <span class="language-text">English</span>
                     </div>
                 </div>
@@ -90,6 +93,7 @@
     </nav>
 
     <!-- Hero Section with Slider -->
+    <main id="main-content">
     <section id="home" class="hero">
         <div class="hero-slider">
             <div class="slide active" style="background-image: url('images/fedai-takim-lab.jpeg')" data-src="images/fedai-takim-lab.jpeg">
@@ -393,6 +397,7 @@
         </div>
     </section>
 
+    </main>
     <!-- Footer -->
     <footer class="footer">
         <div class="container">

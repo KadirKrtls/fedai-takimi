@@ -2470,6 +2470,42 @@ td {
     opacity: 1;
 }
 
+/* Lazy loading için placeholder */
+.lazy-placeholder {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+    border-radius: 8px;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Görsel optimizasyonu */
+.project-img,
+.nav-logo-img,
+.footer-logo-img,
+.slide {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsive görsel boyutları */
+@media (max-width: 768px) {
+    .project-img {
+        max-width: 100%;
+        height: 200px;
+    }
+    
+    .nav-logo-img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
 .lazy-placeholder {
     background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
     display: flex;
