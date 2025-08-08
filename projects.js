@@ -14,9 +14,9 @@ const projectData = {
             { label: 'GPS Hassasiyeti', value: '±1m' }
         ],
         gallery: [
-            'images/fedai-takim-lab.jpeg',
-            'images/fedai-iha-montaj-calismasi.png',
-            'images/fedai-iha-model-sergisi.png'
+            'images/fedai-takim-lab.jpeg?v=20250808',
+            'images/fedai-iha-montaj-calismasi.png?v=20250808',
+            'images/fedai-iha-model-sergisi.png?v=20250808'
         ]
     },
     'kamuflaj-tespit': {
@@ -33,9 +33,9 @@ const projectData = {
             { label: 'Model Boyutu', value: '15 MB' }
         ],
         gallery: [
-            'images/fedai-iha-model-sergisi.png',
-            'images/fedai-takim-lab.jpeg',
-            'images/fedai-iha-montaj-calismasi.png'
+            'images/fedai-iha-model-sergisi.png?v=20250808',
+            'images/fedai-takim-lab.jpeg?v=20250808',
+            'images/fedai-iha-montaj-calismasi.png?v=20250808'
         ]
     },
     'otonom-ucus': {
@@ -52,9 +52,9 @@ const projectData = {
             { label: 'Kontrol Frekansı', value: '100 Hz' }
         ],
         gallery: [
-            'images/fedai-iha-montaj-calismasi.png',
-            'images/fedai-takim-lab.jpeg',
-            'images/fedai-iha-model-sergisi.png'
+            'images/fedai-iha-montaj-calismasi.png?v=20250808',
+            'images/fedai-takim-lab.jpeg?v=20250808',
+            'images/fedai-iha-model-sergisi.png?v=20250808'
         ]
     },
     'haberlesme': {
@@ -71,9 +71,9 @@ const projectData = {
             { label: 'Mesh Node Sayısı', value: '8 adet' }
         ],
         gallery: [
-            'images/fedai-iha-model-sergisi.png',
-            'images/fedai-takim-lab.jpeg',
-            'images/fedai-iha-montaj-calismasi.png'
+            'images/fedai-iha-model-sergisi.png?v=20250808',
+            'images/fedai-takim-lab.jpeg?v=20250808',
+            'images/fedai-iha-montaj-calismasi.png?v=20250808'
         ]
     },
     'gimbal': {
@@ -90,9 +90,9 @@ const projectData = {
             { label: 'Ağırlık', value: '800g' }
         ],
         gallery: [
-            'images/fedai-iha-montaj-calismasi.png',
-            'images/fedai-takim-lab.jpeg',
-            'images/fedai-iha-model-sergisi.png'
+            'images/fedai-iha-montaj-calismasi.png?v=20250808',
+            'images/fedai-takim-lab.jpeg?v=20250808',
+            'images/fedai-iha-model-sergisi.png?v=20250808'
         ]
     },
     'batarya': {
@@ -110,8 +110,8 @@ const projectData = {
         ],
         gallery: [
             'images/fedai-okul-etkinligi-1.jpeg',
-            'images/fedai-takim-lab.jpeg',
-            'images/fedai-iha-model-sergisi.png'
+            'images/fedai-takim-lab.jpeg?v=20250808',
+            'images/fedai-iha-model-sergisi.png?v=20250808'
         ]
     }
 };
