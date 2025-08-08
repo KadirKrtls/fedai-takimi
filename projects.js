@@ -127,7 +127,26 @@ const closeModal = document.querySelector('.close-modal');
 
 // Project card click handlers
 document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('click', () => {
+    card.addEventListener('click', (e) => {
+        // Don't trigger if clicking on buttons or links
+        if (e.target.closest('.project-details-btn') || e.target.closest('.project-link')) {
+            return;
+        }
+        
+        const projectId = card.getAttribute('data-project');
+        const project = projectData[projectId];
+        
+        if (project) {
+            showProjectModal(project);
+        }
+    });
+});
+
+// Project details button handlers
+document.querySelectorAll('.project-details-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const card = btn.closest('.project-card');
         const projectId = card.getAttribute('data-project');
         const project = projectData[projectId];
         
