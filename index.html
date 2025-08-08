@@ -3,27 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fedai Takımı - RTÜ İHA Ekibi</title>
+    <meta name="description" content="Fedai - Recep Tayyip Erdoğan Üniversitesi İHA Ekibi. İnsansız hava araçları teknolojileri, projeler ve yarışmalar.">
+    <meta name="keywords" content="İHA, drone, Fedai, RTÜ, Recep Tayyip Erdoğan Üniversitesi, TEKNOFEST, yarışma">
+    <meta name="author" content="Fedai">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fedaiteam.com/">
+    <meta property="og:title" content="Fedai - RTÜ İHA Ekibi">
+    <meta property="og:description" content="Recep Tayyip Erdoğan Üniversitesi İHA Ekibi. İnsansız hava araçları teknolojileri ve projeler.">
+    <meta property="og:image" content="https://fedaiteam.com/images/fedai-logo.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fedaiteam.com/">
+    <meta property="twitter:title" content="Fedai - RTÜ İHA Ekibi">
+    <meta property="twitter:description" content="Recep Tayyip Erdoğan Üniversitesi İHA Ekibi. İnsansız hava araçları teknolojileri ve projeler.">
+    <meta property="twitter:image" content="https://fedaiteam.com/images/fedai-logo.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fedaiteam.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    
+    <title>Fedai - RTÜ İHA Ekibi</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-plane"></i>
-                <span>Fedai Takımı</span>
+                <img src="images/fedai-logo.jpg" alt="Fedai Logo" class="nav-logo-img">
+                <span>Fedai</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
-                <li><a href="about.html" class="nav-link">Hakkımızda</a></li>
-                <li><a href="projects.html" class="nav-link">Projelerimiz</a></li>
-                <li><a href="competitions.html" class="nav-link">Yarışmalar</a></li>
-                <li><a href="team.html" class="nav-link">Takımımız</a></li>
-                <li><a href="contact.html" class="nav-link">İletişim</a></li>
+                <li><a href="index.html" class="nav-link" data-translate="nav.home">Ana Sayfa</a></li>
+                <li><a href="about.html" class="nav-link" data-translate="nav.about">Hakkımızda</a></li>
+                <li><a href="projects.html" class="nav-link" data-translate="nav.projects">Projelerimiz</a></li>
+                <li><a href="competitions.html" class="nav-link" data-translate="nav.competitions">Yarışmalar</a></li>
+                <li><a href="team.html" class="nav-link" data-translate="nav.team">Takımımız</a></li>
+                <li><a href="contact.html" class="nav-link" data-translate="nav.contact">İletişim</a></li>
             </ul>
+            <div class="search-container">
+                <input type="text" class="search-input" id="searchInput" placeholder="Ara..." data-translate="search.placeholder">
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+            <div class="language-switcher">
+                <button class="language-btn" id="languageBtn" aria-expanded="false" aria-controls="languageDropdown">
+                    <img src="assets/icons/tr.svg" alt="Turkish" class="flag-icon">
+                    <span class="language-text">TR</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <div class="language-option active" data-lang="tr" aria-current="true">
+                        <img src="assets/icons/tr.svg" alt="Turkish" class="flag-icon">
+                        <span class="language-text">Türkçe</span>
+                    </div>
+                    <div class="language-option" data-lang="en">
+                        <img src="assets/icons/en.svg" alt="English" class="flag-icon">
+                        <span class="language-text">English</span>
+                    </div>
+                </div>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -35,59 +92,59 @@
     <!-- Hero Section with Slider -->
     <section id="home" class="hero">
         <div class="hero-slider">
-            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+            <div class="slide active" style="background-image: url('images/fedai-takim-lab.jpeg')" data-src="images/fedai-takim-lab.jpeg">
                 <div class="slide-overlay"></div>
                 <div class="slide-content">
-                    <h1 class="hero-title">Fedai Takımı</h1>
-                    <h2>TEKNOFEST 2024</h2>
-                    <p class="hero-subtitle">Recep Tayyip Erdoğan Üniversitesi İHA Ekibi</p>
-                    <p class="hero-description">Geleceğin teknolojisini bugünden inşa ediyoruz</p>
+                    <h1 class="hero-title" data-translate="hero.title">Fedai</h1>
+                    <h2>Laboratuvar Çalışmaları</h2>
+                    <p class="hero-subtitle" data-translate="hero.subtitle">Recep Tayyip Erdoğan Üniversitesi İHA Ekibi</p>
+                    <p class="hero-description" data-translate="hero.description">İHA projelerimizi geliştiriyoruz</p>
                     <div class="hero-buttons">
-                        <a href="projects.html" class="btn btn-primary">Projelerimiz</a>
-                        <a href="team.html" class="btn btn-secondary">Takımımız</a>
-                        <a href="contact.html" class="btn btn-outline">İletişim</a>
+                        <a href="projects.html" class="btn btn-primary" data-translate="nav.projects">Projelerimiz</a>
+                        <a href="team.html" class="btn btn-secondary" data-translate="nav.team">Takımımız</a>
+                        <a href="contact.html" class="btn btn-outline" data-translate="nav.contact">İletişim</a>
                     </div>
                 </div>
             </div>
-            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+            <div class="slide" style="background-image: url('images/fedai-tanitim-ziyaret.jpeg')" data-src="images/fedai-tanitim-ziyaret.jpeg">
                 <div class="slide-overlay"></div>
                 <div class="slide-content">
-                    <h1 class="hero-title">Fedai Takımı</h1>
-                    <h2>Proje Geliştirme</h2>
-                    <p class="hero-subtitle">Recep Tayyip Erdoğan Üniversitesi İHA Ekibi</p>
-                    <p class="hero-description">Yenilikçi İHA Sistemleri</p>
+                    <h1 class="hero-title" data-translate="hero.title">Fedai Takımı</h1>
+                    <h2>Tanıtım ve Ziyaretler</h2>
+                    <p class="hero-subtitle" data-translate="hero.subtitle">Recep Tayyip Erdoğan Üniversitesi İHA Ekibi</p>
+                    <p class="hero-description" data-translate="hero.description">Projelerimizi tanıtıyoruz</p>
                     <div class="hero-buttons">
-                        <a href="projects.html" class="btn btn-primary">Projelerimiz</a>
-                        <a href="team.html" class="btn btn-secondary">Takımımız</a>
-                        <a href="contact.html" class="btn btn-outline">İletişim</a>
+                        <a href="projects.html" class="btn btn-primary" data-translate="nav.projects">Projelerimiz</a>
+                        <a href="team.html" class="btn btn-secondary" data-translate="nav.team">Takımımız</a>
+                        <a href="contact.html" class="btn btn-outline" data-translate="nav.contact">İletişim</a>
                     </div>
                 </div>
             </div>
-            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+            <div class="slide" style="background-image: url('images/fedai-iha-montaj-calismasi.png')" data-src="images/fedai-iha-montaj-calismasi.png">
                 <div class="slide-overlay"></div>
                 <div class="slide-content">
-                    <h1 class="hero-title">Fedai Takımı</h1>
-                    <h2>Takım Çalışması</h2>
-                    <p class="hero-subtitle">Recep Tayyip Erdoğan Üniversitesi İHA Ekibi</p>
-                    <p class="hero-description">15+ Uzman Takım Üyesi</p>
+                    <h1 class="hero-title" data-translate="hero.title">Fedai Takımı</h1>
+                    <h2>Montaj Çalışmaları</h2>
+                    <p class="hero-subtitle" data-translate="hero.subtitle">Recep Tayyip Erdoğan Üniversitesi İHA Ekibi</p>
+                    <p class="hero-description" data-translate="hero.description">İHA montaj süreçlerimiz</p>
                     <div class="hero-buttons">
-                        <a href="projects.html" class="btn btn-primary">Projelerimiz</a>
-                        <a href="team.html" class="btn btn-secondary">Takımımız</a>
-                        <a href="contact.html" class="btn btn-outline">İletişim</a>
+                        <a href="projects.html" class="btn btn-primary" data-translate="nav.projects">Projelerimiz</a>
+                        <a href="team.html" class="btn btn-secondary" data-translate="nav.team">Takımımız</a>
+                        <a href="contact.html" class="btn btn-outline" data-translate="nav.contact">İletişim</a>
                     </div>
                 </div>
             </div>
-            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+            <div class="slide" style="background-image: url('images/fedai-iha-model-sergisi.png')" data-src="images/fedai-iha-model-sergisi.png">
                 <div class="slide-overlay"></div>
                 <div class="slide-content">
-                    <h1 class="hero-title">Fedai Takımı</h1>
-                    <h2>Başarılarımız</h2>
-                    <p class="hero-subtitle">Recep Tayyip Erdoğan Üniversitesi İHA Ekibi</p>
-                    <p class="hero-description">5 Yarışma, 3 Ödül</p>
+                    <h1 class="hero-title" data-translate="hero.title">Fedai Takımı</h1>
+                    <h2>Model Sergisi</h2>
+                    <p class="hero-subtitle" data-translate="hero.subtitle">Recep Tayyip Erdoğan Üniversitesi İHA Ekibi</p>
+                    <p class="hero-description" data-translate="hero.description">İHA modellerimizi sergiliyoruz</p>
                     <div class="hero-buttons">
-                        <a href="projects.html" class="btn btn-primary">Projelerimiz</a>
-                        <a href="team.html" class="btn btn-secondary">Takımımız</a>
-                        <a href="contact.html" class="btn btn-outline">İletişim</a>
+                        <a href="projects.html" class="btn btn-primary" data-translate="nav.projects">Projelerimiz</a>
+                        <a href="team.html" class="btn btn-secondary" data-translate="nav.team">Takımımız</a>
+                        <a href="contact.html" class="btn btn-outline" data-translate="nav.contact">İletişim</a>
                     </div>
                 </div>
             </div>
@@ -112,36 +169,36 @@
                     <div class="overview-icon">
                         <i class="fas fa-rocket"></i>
                     </div>
-                    <h3>Projelerimiz</h3>
-                    <p>8 farklı İHA projesi ile yenilikçi çözümler geliştiriyoruz.</p>
-                    <a href="projects.html" class="overview-link">Detayları Gör <i class="fas fa-arrow-right"></i></a>
+                    <h3 data-translate="nav.projects">Projelerimiz</h3>
+                    <p data-translate="overview.projects">8 farklı İHA projesi ile yenilikçi çözümler geliştiriyoruz.</p>
+                    <a href="projects.html" class="overview-link" data-translate="overview.projects.link">Detayları Gör <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <div class="overview-card">
                     <div class="overview-icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h3>Takımımız</h3>
-                    <p>4 farklı birimde 15+ uzman takım üyesi ile çalışıyoruz.</p>
-                    <a href="team.html" class="overview-link">Takımı Tanı <i class="fas fa-arrow-right"></i></a>
+                    <h3 data-translate="nav.team">Takımımız</h3>
+                    <p data-translate="overview.team">4 farklı birimde 15+ uzman takım üyesi ile çalışıyoruz.</p>
+                    <a href="team.html" class="overview-link" data-translate="overview.team.link">Takımı Tanı <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <div class="overview-card">
                     <div class="overview-icon">
                         <i class="fas fa-trophy"></i>
                     </div>
-                    <h3>Yarışmalar</h3>
-                    <p>5 farklı yarışmada başarılar elde ettik, 3 ödül kazandık.</p>
-                    <a href="competitions.html" class="overview-link">Başarılarımız <i class="fas fa-arrow-right"></i></a>
+                    <h3 data-translate="nav.competitions">Yarışmalar</h3>
+                    <p data-translate="overview.competitions">5 farklı yarışmada başarılar elde ettik, 3 ödül kazandık.</p>
+                    <a href="competitions.html" class="overview-link" data-translate="overview.competitions.link">Başarılarımız <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <div class="overview-card">
                     <div class="overview-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <h3>İletişim</h3>
-                    <p>Bizimle iletişime geçin, projelerimiz hakkında bilgi alın.</p>
-                    <a href="contact.html" class="overview-link">İletişime Geç <i class="fas fa-arrow-right"></i></a>
+                    <h3 data-translate="nav.contact">İletişim</h3>
+                    <p data-translate="overview.contact">Bizimle iletişime geçin, projelerimiz hakkında bilgi alın.</p>
+                    <a href="contact.html" class="overview-link" data-translate="overview.contact.link">İletişime Geç <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -151,8 +208,8 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2>Hakkımızda</h2>
-                <p>Biz kimiz ve ne yapıyoruz?</p>
+                <h2 data-translate="about.title">Hakkımızda</h2>
+                <p data-translate="about.subtitle">Biz kimiz ve ne yapıyoruz?</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
@@ -192,12 +249,156 @@
         </div>
     </section>
 
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="blog.title">Son Gelişmeler</h2>
+                <p data-translate="blog.subtitle">Fedai Takımı'nın en son haberleri ve projeleri</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <img src="images/fedai-takim-lab.jpeg" alt="TEKNOFEST 2024 Hazırlıkları" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">8 Ağustos 2024</div>
+                        <h3 class="blog-title">TEKNOFEST 2024 İHA Yarışması Hazırlıkları</h3>
+                        <p class="blog-excerpt">Fedai Takımı olarak TEKNOFEST 2024 İHA yarışması için yoğun hazırlık sürecindeyiz. Yeni teknolojiler ve gelişmiş sistemlerle yarışmaya hazırlanıyoruz.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">TEKNOFEST</span>
+                            <span class="blog-tag">İHA</span>
+                            <span class="blog-tag">Yarışma</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <img src="images/fedai-iha-model-sergisi.png" alt="Model Sergisi" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">5 Ağustos 2024</div>
+                        <h3 class="blog-title">İHA Modellerimiz Sergide</h3>
+                        <p class="blog-excerpt">Üniversitemizde düzenlenen teknoloji sergisinde İHA modellerimizi tanıttık. Öğrenciler ve akademisyenlerden büyük ilgi gördü.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">Sergi</span>
+                            <span class="blog-tag">Tanıtım</span>
+                            <span class="blog-tag">Model</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <img src="images/fedai-okul-etkinligi-1.jpeg" alt="Okul Etkinliği" class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-date">2 Ağustos 2024</div>
+                        <h3 class="blog-title">Okul Etkinliklerimiz Devam Ediyor</h3>
+                        <p class="blog-excerpt">Rize'deki okullarda İHA teknolojileri hakkında bilgilendirme etkinlikleri düzenliyoruz. Genç nesillere havacılık sevgisini aşılıyoruz.</p>
+                        <div class="blog-tags">
+                            <span class="blog-tag">Eğitim</span>
+                            <span class="blog-tag">Okul</span>
+                            <span class="blog-tag">Tanıtım</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="sponsors-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="sponsors.title">Sponsorlarımız ve Partnerlerimiz</h2>
+                <p data-translate="sponsors.subtitle">Fedai Takımı'nı destekleyen değerli kurumlar</p>
+            </div>
+            <div class="sponsors-grid">
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="sponsor-name">Recep Tayyip Erdoğan Üniversitesi</h3>
+                    <div class="sponsor-type">Akademik Partner</div>
+                    <p class="sponsor-description">Üniversitemiz bize laboratuvar imkanları, mentorluk ve akademik destek sağlamaktadır.</p>
+                    <a href="https://www.rtu.edu.tr" target="_blank" class="sponsor-link">Web Sitesi</a>
+                </div>
+                
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 class="sponsor-name">TÜBİTAK</h3>
+                    <div class="sponsor-type">Teknoloji Partneri</div>
+                    <p class="sponsor-description">TÜBİTAK'ın sağladığı proje destekleri ile araştırma ve geliştirme çalışmalarımızı sürdürüyoruz.</p>
+                    <a href="https://www.tubitak.gov.tr" target="_blank" class="sponsor-link">Web Sitesi</a>
+                </div>
+                
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="sponsor-name">TEKNOFEST</h3>
+                    <div class="sponsor-type">Yarışma Organizasyonu</div>
+                    <p class="sponsor-description">TEKNOFEST yarışmalarında elde ettiğimiz başarılar ve kazandığımız ödüllerle motivasyonumuzu artırıyoruz.</p>
+                    <a href="https://teknofest.org" target="_blank" class="sponsor-link">Web Sitesi</a>
+                </div>
+                
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="sponsor-name">Elektronik Firmaları</h3>
+                    <div class="sponsor-type">Teknik Partner</div>
+                    <p class="sponsor-description">Çeşitli elektronik firmalarından aldığımız teknik destek ve donanım yardımları ile projelerimizi geliştiriyoruz.</p>
+                    <a href="#" class="sponsor-link">Detaylar</a>
+                </div>
+                
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="sponsor-name">Akademisyenler</h3>
+                    <div class="sponsor-type">Mentor Desteği</div>
+                    <p class="sponsor-description">Üniversitemizin değerli akademisyenleri bize mentorluk yaparak bilgi ve deneyimlerini paylaşmaktadır.</p>
+                    <a href="team.html" class="sponsor-link">Takımımız</a>
+                </div>
+                
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="sponsor-name">Mezunlarımız</h3>
+                    <div class="sponsor-type">Alumni Desteği</div>
+                    <p class="sponsor-description">Takımımızdan mezun olan üyelerimiz bize deneyim ve kariyer rehberliği konularında destek olmaktadır.</p>
+                    <a href="about.html" class="sponsor-link">Hakkımızda</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container">
+                <h2 class="newsletter-title" data-translate="newsletter.title">Güncel Kalın</h2>
+                <p class="newsletter-description" data-translate="newsletter.subtitle">Fedai Takımı'nın en son projeleri ve gelişmeleri hakkında bilgi almak için bültenimize abone olun.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" class="newsletter-input" id="newsletterEmail" placeholder="E-posta adresiniz" required>
+                    <button type="submit" class="newsletter-btn" data-translate="newsletter.button">Abone Ol</button>
+                </form>
+                <div class="newsletter-success" id="newsletterSuccess">
+                    Başarıyla abone oldunuz! Teşekkürler.
+                </div>
+                <div class="newsletter-error" id="newsletterError">
+                    Bir hata oluştu. Lütfen tekrar deneyin.
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <i class="fas fa-plane"></i>
+                    <img src="images/fedai-logo.jpg" alt="Fedai Takımı Logo" class="footer-logo-img">
                     <span>Fedai Takımı</span>
                 </div>
                 <p>&copy; 2024 Fedai Takımı. Tüm hakları saklıdır.</p>
@@ -213,6 +414,26 @@
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h3>Çerez Kullanımı</h3>
+                <p>Bu web sitesi deneyiminizi geliştirmek için çerezler kullanmaktadır. Sitemizi kullanmaya devam ederek çerez kullanımını kabul etmiş sayılırsınız.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn accept" id="acceptCookies">Kabul Et</button>
+                <button class="cookie-btn decline" id="declineCookies">Reddet</button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
+    <script src="translate.js"></script>
 </body>
 </html>

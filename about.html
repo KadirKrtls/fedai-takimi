@@ -3,27 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hakkımızda - Fedai Takımı</title>
+    <meta name="description" content="Fedai hakkında detaylı bilgi. Recep Tayyip Erdoğan Üniversitesi İHA Ekibi'nin vizyonu, misyonu ve değerleri.">
+    <meta name="keywords" content="Fedai, RTÜ, İHA ekibi, vizyon, misyon, değerler">
+    <meta name="author" content="Fedai">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fedaiteam.com/about.html">
+    <meta property="og:title" content="Hakkımızda - Fedai">
+    <meta property="og:description" content="Fedai hakkında detaylı bilgi. Recep Tayyip Erdoğan Üniversitesi İHA Ekibi'nin vizyonu, misyonu ve değerleri.">
+    <meta property="og:image" content="https://fedaiteam.com/images/fedai-logo.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fedaiteam.com/about.html">
+    <meta property="twitter:title" content="Hakkımızda - Fedai">
+    <meta property="twitter:description" content="Fedai hakkında detaylı bilgi. Recep Tayyip Erdoğan Üniversitesi İHA Ekibi'nin vizyonu, misyonu ve değerleri.">
+    <meta property="twitter:image" content="https://fedaiteam.com/images/fedai-logo.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fedaiteam.com/about.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    
+    <title>Hakkımızda - Fedai</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-plane"></i>
-                <span>Fedai Takımı</span>
+                <img src="images/fedai-logo.jpg" alt="Fedai Logo" class="nav-logo-img">
+                <span>Fedai</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
-                <li><a href="about.html" class="nav-link active">Hakkımızda</a></li>
-                <li><a href="projects.html" class="nav-link">Projelerimiz</a></li>
-                <li><a href="competitions.html" class="nav-link">Yarışmalar</a></li>
-                <li><a href="team.html" class="nav-link">Takımımız</a></li>
-                <li><a href="contact.html" class="nav-link">İletişim</a></li>
+                <li><a href="index.html" class="nav-link" data-translate="nav.home">Ana Sayfa</a></li>
+                <li><a href="about.html" class="nav-link active" data-translate="nav.about">Hakkımızda</a></li>
+                <li><a href="projects.html" class="nav-link" data-translate="nav.projects">Projelerimiz</a></li>
+                <li><a href="competitions.html" class="nav-link" data-translate="nav.competitions">Yarışmalar</a></li>
+                <li><a href="team.html" class="nav-link" data-translate="nav.team">Takımımız</a></li>
+                <li><a href="contact.html" class="nav-link" data-translate="nav.contact">İletişim</a></li>
             </ul>
+            <div class="search-container">
+                <input type="text" class="search-input" id="searchInput" placeholder="Ara..." data-translate="search.placeholder">
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+            <div class="language-switcher">
+                <button class="language-btn" id="languageBtn" aria-expanded="false" aria-controls="languageDropdown">
+                    <img src="assets/icons/tr.svg" alt="Turkish" class="flag-icon">
+                    <span class="language-text">TR</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <div class="language-option active" data-lang="tr" aria-current="true">
+                        <img src="assets/icons/tr.svg" alt="Turkish" class="flag-icon">
+                        <span class="language-text">Türkçe</span>
+                    </div>
+                    <div class="language-option" data-lang="en">
+                        <img src="assets/icons/en.svg" alt="English" class="flag-icon">
+                        <span class="language-text">English</span>
+                    </div>
+                </div>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -32,11 +89,25 @@
         </div>
     </nav>
 
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="breadcrumb-container">
+            <ul class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="index.html" class="breadcrumb-link">Ana Sayfa</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <span class="breadcrumb-current">Hakkımızda</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- About Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Hakkımızda</h1>
-            <p>Biz kimiz ve ne yapıyoruz?</p>
+            <h1 data-translate="about.title">Hakkımızda</h1>
+            <p data-translate="about.subtitle">Biz kimiz ve ne yapıyoruz?</p>
         </div>
     </section>
 
@@ -47,15 +118,12 @@
             <div class="about-section">
                 <div class="about-content">
                     <div class="about-text">
-                        <h2>Biz Kimiz?</h2>
-                        <p>Fedai Takımı, Recep Tayyip Erdoğan Üniversitesi öğrencilerinden oluşan, İHA teknolojileri alanında uzmanlaşmış bir öğrenci topluluğudur. 2020 yılında kurulan takımımız, otonom uçuş sistemleri, görüntü işleme, yapay zeka ve makine öğrenmesi alanlarında yenilikçi çözümler geliştirmektedir.</p>
-                        <p>Takımımız, Türkiye'nin önde gelen İHA yarışmalarında başarılar elde etmiş, ulusal ve uluslararası projelerde yer almıştır. Geleceğin havacılık mühendislerini yetiştirmeyi hedefleyen ekibimiz, sürekli öğrenme ve gelişim odaklı çalışmaktadır.</p>
+                        <h2 data-translate="about.who.title">Biz Kimiz?</h2>
+                        <p data-translate="about.who.description1">Fedai Takımı, Recep Tayyip Erdoğan Üniversitesi öğrencilerinden oluşan, İHA teknolojileri alanında uzmanlaşmış bir öğrenci topluluğudur. 2020 yılında kurulan takımımız, otonom uçuş sistemleri, görüntü işleme, yapay zeka ve makine öğrenmesi alanlarında yenilikçi çözümler geliştirmektedir.</p>
+                        <p data-translate="about.who.description2">Takımımız, Türkiye'nin önde gelen İHA yarışmalarında başarılar elde etmiş, ulusal ve uluslararası projelerde yer almıştır. Geleceğin havacılık mühendislerini yetiştirmeyi hedefleyen ekibimiz, sürekli öğrenme ve gelişim odaklı çalışmaktadır.</p>
                     </div>
                     <div class="about-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-users"></i>
-                            <p>Takım Fotoğrafı</p>
-                        </div>
+                        <img src="images/fedai-takim-fotografi.jpeg" alt="Fedai Üyeleri" class="about-team-photo">
                     </div>
                 </div>
             </div>
@@ -67,30 +135,30 @@
                         <div class="vmv-icon">
                             <i class="fas fa-eye"></i>
                         </div>
-                        <h3>Vizyonumuz</h3>
-                        <p>Türkiye'nin önde gelen İHA teknolojilerini geliştiren, ulusal ve uluslararası yarışmalarda başarılar elde eden, geleceğin havacılık mühendislerini yetiştiren bir ekibiz. Teknoloji alanında sınırları zorlayan, yenilikçi çözümler üreten ve ülkemizin teknolojik gücüne katkıda bulunan bir topluluk olmayı hedefliyoruz.</p>
+                        <h3 data-translate="about.vision.title">Vizyonumuz</h3>
+                        <p data-translate="about.vision.description">Türkiye'nin önde gelen İHA teknolojilerini geliştiren, ulusal ve uluslararası yarışmalarda başarılar elde eden, geleceğin havacılık mühendislerini yetiştiren bir ekibiz. Teknoloji alanında sınırları zorlayan, yenilikçi çözümler üreten ve ülkemizin teknolojik gücüne katkıda bulunan bir topluluk olmayı hedefliyoruz.</p>
                     </div>
 
                     <div class="vmv-card">
                         <div class="vmv-icon">
                             <i class="fas fa-rocket"></i>
                         </div>
-                        <h3>Misyonumuz</h3>
-                        <p>İnsansız hava araçları alanında yenilikçi çözümler üretmek, takım çalışması ve liderlik becerilerini geliştirmek, ülkemizin teknoloji alanındaki gücüne katkıda bulunmak. Öğrencilerin teorik bilgilerini pratiğe dökebilecekleri bir platform oluşturmak ve endüstri ile akademi arasında köprü kurmak.</p>
+                        <h3 data-translate="about.mission.title">Misyonumuz</h3>
+                        <p data-translate="about.mission.description">İnsansız hava araçları alanında yenilikçi çözümler üretmek, takım çalışması ve liderlik becerilerini geliştirmek, ülkemizin teknoloji alanındaki gücüne katkıda bulunmak. Öğrencilerin teorik bilgilerini pratiğe dökebilecekleri bir platform oluşturmak ve endüstri ile akademi arasında köprü kurmak.</p>
                     </div>
 
                     <div class="vmv-card">
                         <div class="vmv-icon">
                             <i class="fas fa-heart"></i>
                         </div>
-                        <h3>Değerlerimiz</h3>
+                        <h3 data-translate="about.values.title">Değerlerimiz</h3>
                         <ul>
-                            <li>Yenilikçilik ve sürekli gelişim</li>
-                            <li>Takım çalışması ve dayanışma</li>
-                            <li>Kalite ve mükemmellik arayışı</li>
-                            <li>Ulusal teknoloji geliştirme sorumluluğu</li>
-                            <li>Etik değerler ve şeffaflık</li>
-                            <li>Sosyal sorumluluk bilinci</li>
+                            <li data-translate="about.values.item1">Yenilikçilik ve sürekli gelişim</li>
+                            <li data-translate="about.values.item2">Takım çalışması ve dayanışma</li>
+                            <li data-translate="about.values.item3">Kalite ve mükemmellik arayışı</li>
+                            <li data-translate="about.values.item4">Ulusal teknoloji geliştirme sorumluluğu</li>
+                            <li data-translate="about.values.item5">Etik değerler ve şeffaflık</li>
+                            <li data-translate="about.values.item6">Sosyal sorumluluk bilinci</li>
                         </ul>
                     </div>
                 </div>
@@ -98,45 +166,45 @@
 
             <!-- History Timeline -->
             <div class="timeline-section">
-                <h2>Yolculuğumuz</h2>
+                <h2 data-translate="about.journey.title">Yolculuğumuz</h2>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-date">2020</div>
                         <div class="timeline-content">
-                            <h3>Kuruluş</h3>
-                            <p>Fedai Takımı, Recep Tayyip Erdoğan Üniversitesi'nde kuruldu. İlk üyelerimiz ile birlikte İHA teknolojileri alanında çalışmaya başladık.</p>
+                            <h3 data-translate="about.timeline.2020.title">Kuruluş</h3>
+                            <p data-translate="about.timeline.2020.description">Fedai Takımı, Recep Tayyip Erdoğan Üniversitesi'nde kuruldu. İlk üyelerimiz ile birlikte İHA teknolojileri alanında çalışmaya başladık.</p>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-date">2021</div>
                         <div class="timeline-content">
-                            <h3>İlk Projeler</h3>
-                            <p>İlk İHA projelerimizi geliştirdik. Otonom uçuş sistemleri ve temel görüntü işleme algoritmaları üzerinde çalışmaya başladık.</p>
+                            <h3 data-translate="about.timeline.2021.title">İlk Projeler</h3>
+                            <p data-translate="about.timeline.2021.description">İlk İHA projelerimizi geliştirdik. Otonom uçuş sistemleri ve temel görüntü işleme algoritmaları üzerinde çalışmaya başladık.</p>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-date">2022</div>
                         <div class="timeline-content">
-                            <h3>İlk Yarışma Deneyimi</h3>
-                            <p>ODTÜ İHA Yarışması'na katıldık. İlk kez ulusal bir yarışmada yer alarak deneyim kazandık ve takım çalışmasını geliştirdik.</p>
+                            <h3 data-translate="about.timeline.2022.title">İlk Yarışma Deneyimi</h3>
+                            <p data-translate="about.timeline.2022.description">ODTÜ İHA Yarışması'na katıldık. İlk kez ulusal bir yarışmada yer alarak deneyim kazandık ve takım çalışmasını geliştirdik.</p>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-date">2023</div>
                         <div class="timeline-content">
-                            <h3>Başarılar</h3>
-                            <p>TEKNOFEST İHA Yarışması'nda finalist olduk. İTÜ İHA Yarışması'nda 3. olarak ödül kazandık. Kamuflajlı hedef tespiti projemiz ile öne çıktık.</p>
+                            <h3 data-translate="about.timeline.2023.title">Başarılar</h3>
+                            <p data-translate="about.timeline.2023.description">TEKNOFEST İHA Yarışması'nda finalist olduk. İTÜ İHA Yarışması'nda 3. olarak ödül kazandık. Kamuflajlı hedef tespiti projemiz ile öne çıktık.</p>
                         </div>
                     </div>
 
                     <div class="timeline-item">
                         <div class="timeline-date">2024</div>
                         <div class="timeline-content">
-                            <h3>Gelişim</h3>
-                            <p>15+ üyeli güçlü bir ekibe dönüştük. 8 farklı proje geliştirdik. TEKNOFEST 2024'e hazırlanıyoruz.</p>
+                            <h3 data-translate="about.timeline.2024.title">Gelişim</h3>
+                            <p data-translate="about.timeline.2024.description">15+ üyeli güçlü bir ekibe dönüştük. 8 farklı proje geliştirdik. TEKNOFEST 2024'e hazırlanıyoruz.</p>
                         </div>
                     </div>
                 </div>
@@ -144,69 +212,69 @@
 
             <!-- Stats Section -->
             <div class="stats-section">
-                <h2>Rakamlarla Fedai Takımı</h2>
+                <h2 data-translate="about.stats.title">Rakamlarla Fedai Takımı</h2>
                 <div class="stats-grid">
                     <div class="stat-item">
                         <div class="stat-number">15+</div>
-                        <div class="stat-label">Takım Üyesi</div>
+                        <div class="stat-label" data-translate="stats.team.member">Takım Üyesi</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">8</div>
-                        <div class="stat-label">Proje</div>
+                        <div class="stat-label" data-translate="stats.project">Proje</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">5</div>
-                        <div class="stat-label">Yarışma</div>
+                        <div class="stat-label" data-translate="stats.competition">Yarışma</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">3</div>
-                        <div class="stat-label">Ödül</div>
+                        <div class="stat-label" data-translate="stats.award">Ödül</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">4</div>
-                        <div class="stat-label">Birim</div>
+                        <div class="stat-label" data-translate="stats.unit">Birim</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">3</div>
-                        <div class="stat-label">Yıl</div>
+                        <div class="stat-label" data-translate="stats.year">Yıl</div>
                     </div>
                 </div>
             </div>
 
             <!-- Goals -->
             <div class="goals-section">
-                <h2>Hedeflerimiz</h2>
+                <h2 data-translate="about.goals.title">Hedeflerimiz</h2>
                 <div class="goals-grid">
                     <div class="goal-card">
                         <div class="goal-icon">
                             <i class="fas fa-trophy"></i>
                         </div>
-                        <h3>TEKNOFEST Şampiyonluğu</h3>
-                        <p>2024 TEKNOFEST İHA Yarışması'nda şampiyon olmayı hedefliyoruz.</p>
+                        <h3 data-translate="about.goals.teknofest.title">TEKNOFEST Şampiyonluğu</h3>
+                        <p data-translate="about.goals.teknofest.description">2024 TEKNOFEST İHA Yarışması'nda şampiyon olmayı hedefliyoruz.</p>
                     </div>
 
                     <div class="goal-card">
                         <div class="goal-icon">
                             <i class="fas fa-globe"></i>
                         </div>
-                        <h3>Uluslararası Başarı</h3>
-                        <p>Uluslararası İHA yarışmalarında Türkiye'yi temsil etmek istiyoruz.</p>
+                        <h3 data-translate="about.goals.international.title">Uluslararası Başarı</h3>
+                        <p data-translate="about.goals.international.description">Uluslararası İHA yarışmalarında Türkiye'yi temsil etmek istiyoruz.</p>
                     </div>
 
                     <div class="goal-card">
                         <div class="goal-icon">
                             <i class="fas fa-industry"></i>
                         </div>
-                        <h3>Endüstri İşbirlikleri</h3>
-                        <p>Savunma sanayi ve teknoloji şirketleri ile işbirlikleri kurmayı hedefliyoruz.</p>
+                        <h3 data-translate="about.goals.industry.title">Endüstri İşbirlikleri</h3>
+                        <p data-translate="about.goals.industry.description">Savunma sanayi ve teknoloji şirketleri ile işbirlikleri kurmayı hedefliyoruz.</p>
                     </div>
 
                     <div class="goal-card">
                         <div class="goal-icon">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
-                        <h3>Akademik Gelişim</h3>
-                        <p>Takım üyelerimizin akademik kariyerlerini desteklemek ve yüksek lisans/doktora programlarına yönlendirmek.</p>
+                        <h3 data-translate="about.goals.academic.title">Akademik Gelişim</h3>
+                        <p data-translate="about.goals.academic.description">Takım üyelerimizin akademik kariyerlerini desteklemek ve yüksek lisans/doktora programlarına yönlendirmek.</p>
                     </div>
                 </div>
             </div>
@@ -218,10 +286,10 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <i class="fas fa-plane"></i>
-                    <span>Fedai Takımı</span>
-                </div>
-                <p>&copy; 2024 Fedai Takımı. Tüm hakları saklıdır.</p>
+                                    <img src="images/fedai-logo.jpg" alt="Fedai Logo" class="footer-logo-img">
+                <span>Fedai</span>
+            </div>
+            <p>&copy; 2024 Fedai. Tüm hakları saklıdır.</p>
                 <div class="footer-links">
                     <a href="index.html">Ana Sayfa</a>
                     <a href="about.html">Hakkımızda</a>
@@ -234,6 +302,26 @@
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h3>Çerez Kullanımı</h3>
+                <p>Bu web sitesi deneyiminizi geliştirmek için çerezler kullanmaktadır. Sitemizi kullanmaya devam ederek çerez kullanımını kabul etmiş sayılırsınız.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn accept" id="acceptCookies">Kabul Et</button>
+                <button class="cookie-btn decline" id="declineCookies">Reddet</button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
+    <script src="translate.js"></script>
 </body>
 </html>

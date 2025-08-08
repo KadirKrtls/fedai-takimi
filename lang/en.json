@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Our Projects",
+    "competitions": "Competitions",
+    "team": "Our Team",
+    "contact": "Contact"
+  },
+  "search": {
+    "placeholder": "Search..."
+  },
+  "hero": {
+    "title": "Fedai",
+    "subtitle": "Recep Tayyip Erdoğan University UAV Team",
+    "description": "We develop UAV projects"
+  },
+  "overview": {
+    "projects": "We develop innovative solutions with 8 different UAV projects.",
+    "projects.link": "See Details",
+    "team": "We work with 15+ expert team members in 4 different units.",
+    "team.link": "Meet the Team",
+    "competitions": "We achieved success in 5 different competitions, we won 3 awards.",
+    "competitions.link": "Our Achievements",
+    "contact": "Contact us, get information about our projects.",
+    "contact.link": "Contact Us"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Who are we and what do we do?",
+    "description": "Fedai is a UAV team consisting of students from Recep Tayyip Erdoğan University. We are a team that has achieved success in TEKNOFEST competitions and continuously improves itself.",
+    "who": {
+      "title": "Who Are We?",
+      "description1": "Fedai Team is a student community specializing in UAV technologies, consisting of students from Recep Tayyip Erdoğan University. Our team, established in 2020, develops innovative solutions in autonomous flight systems, image processing, artificial intelligence and machine learning.",
+      "description2": "Our team has achieved success in Turkey's leading UAV competitions and participated in national and international projects. Our team, which aims to train the aviation engineers of the future, works with a focus on continuous learning and development."
+    },
+    "journey": {
+      "title": "Our Journey"
+    },
+    "stats": {
+      "title": "Fedai Team in Numbers"
+    },
+    "goals": {
+      "title": "Our Goals",
+      "teknofest": {
+        "title": "TEKNOFEST Championship",
+        "description": "We aim to become champions in the 2024 TEKNOFEST UAV Competition."
+      },
+      "international": {
+        "title": "International Success",
+        "description": "We want to represent Turkey in international UAV competitions."
+      },
+      "industry": {
+        "title": "Industry Collaborations",
+        "description": "We aim to establish collaborations with defense industry and technology companies."
+      },
+      "academic": {
+        "title": "Academic Development",
+        "description": "To support the academic careers of our team members and direct them to master's/doctoral programs."
+      }
+    },
+    "timeline": {
+      "2020": {
+        "title": "Foundation",
+        "description": "Fedai Team was established at Recep Tayyip Erdoğan University. We started working in UAV technologies with our first members."
+      },
+      "2021": {
+        "title": "First Projects",
+        "description": "We developed our first UAV projects. We started working on autonomous flight systems and basic image processing algorithms."
+      },
+      "2022": {
+        "title": "First Competition Experience",
+        "description": "We participated in the METU UAV Competition. We gained experience by participating in a national competition for the first time and developed teamwork."
+      },
+      "2023": {
+        "title": "Achievements",
+        "description": "We became finalists in the TEKNOFEST UAV Competition. We won 3rd place in the ITU UAV Competition. We stood out with our camouflage target detection project."
+      },
+      "2024": {
+        "title": "Development",
+        "description": "We have become a strong team with 15+ members. We developed 8 different projects. We are preparing for TEKNOFEST 2024."
+      }
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "We are a team that develops Turkey's leading UAV technologies, achieves success in national and international competitions, and trains the aviation engineers of the future. We aim to be an organization that pushes boundaries in technology, produces innovative solutions, and contributes to our country's technological power."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To produce innovative solutions in the field of unmanned aerial vehicles, to develop teamwork and leadership skills, to contribute to our country's power in the field of technology. To create a platform where students can put their theoretical knowledge into practice and build a bridge between industry and academia."
+    },
+    "values": {
+      "title": "Our Values",
+      "item1": "Innovation and continuous development",
+      "item2": "Teamwork and solidarity",
+      "item3": "Quest for quality and excellence",
+      "item4": "Responsibility for national technology development",
+      "item5": "Ethical values and transparency",
+      "item6": "Social responsibility awareness"
+    }
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Innovative UAV systems we developed",
+    "details": "See Details"
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Our areas of expertise and responsibilities"
+  },
+  "competitions": {
+    "title": "Competitions",
+    "subtitle": "Competitions we participated in and our achievements"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in touch with us"
+  },
+  "stats": {
+    "team.member": "Team Member",
+    "project": "Project",
+    "competition": "Competition",
+    "award": "Award",
+    "unit": "Unit",
+    "year": "Year"
+  },
+  "blog": {
+    "title": "Latest News",
+    "subtitle": "Latest news and projects of Fedai Team"
+  },
+  "sponsors": {
+    "title": "Our Sponsors and Partners",
+    "subtitle": "Valuable institutions supporting Fedai Team"
+  },
+  "newsletter": {
+    "title": "Stay Updated",
+    "subtitle": "Subscribe to our newsletter to get information about Fedai Team's latest projects and developments.",
+    "button": "Subscribe"
+  },
+  "footer": {
+    "copyright": "All rights reserved."
+  }
+}

@@ -3,27 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projelerimiz - Fedai Takımı</title>
+    <title>Projelerimiz - Fedai</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-plane"></i>
-                <span>Fedai Takımı</span>
+                <img src="images/fedai-logo.jpg" alt="Fedai Logo" class="nav-logo-img">
+                <span>Fedai</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
-                <li><a href="about.html" class="nav-link">Hakkımızda</a></li>
-                <li><a href="projects.html" class="nav-link active">Projelerimiz</a></li>
-                <li><a href="competitions.html" class="nav-link">Yarışmalar</a></li>
-                <li><a href="team.html" class="nav-link">Takımımız</a></li>
-                <li><a href="contact.html" class="nav-link">İletişim</a></li>
+                <li><a href="index.html" class="nav-link" data-translate="nav.home">Ana Sayfa</a></li>
+                <li><a href="about.html" class="nav-link" data-translate="nav.about">Hakkımızda</a></li>
+                <li><a href="projects.html" class="nav-link active" data-translate="nav.projects">Projelerimiz</a></li>
+                <li><a href="competitions.html" class="nav-link" data-translate="nav.competitions">Yarışmalar</a></li>
+                <li><a href="team.html" class="nav-link" data-translate="nav.team">Takımımız</a></li>
+                <li><a href="contact.html" class="nav-link" data-translate="nav.contact">İletişim</a></li>
             </ul>
+            <div class="search-container">
+                <input type="text" class="search-input" id="searchInput" placeholder="Ara..." data-translate="search.placeholder">
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+            <div class="language-switcher">
+                <button class="language-btn" id="languageBtn" aria-expanded="false" aria-controls="languageDropdown">
+                    <img src="assets/icons/tr.svg" alt="Turkish" class="flag-icon">
+                    <span class="language-text">TR</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <div class="language-option active" data-lang="tr" aria-current="true">
+                        <img src="assets/icons/tr.svg" alt="Turkish" class="flag-icon">
+                        <span class="language-text">Türkçe</span>
+                    </div>
+                    <div class="language-option" data-lang="en">
+                        <img src="assets/icons/en.svg" alt="English" class="flag-icon">
+                        <span class="language-text">English</span>
+                    </div>
+                </div>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -32,11 +61,25 @@
         </div>
     </nav>
 
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="breadcrumb-container">
+            <ul class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="index.html" class="breadcrumb-link">Ana Sayfa</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <span class="breadcrumb-current">Projelerimiz</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Projects Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Projelerimiz</h1>
-            <p>Geliştirdiğimiz yenilikçi İHA sistemleri</p>
+            <h1 data-translate="nav.projects">Projelerimiz</h1>
+            <p data-translate="projects.subtitle">Geliştirdiğimiz yenilikçi İHA sistemleri</p>
         </div>
     </section>
 
@@ -46,7 +89,7 @@
             <div class="projects-grid">
                 <div class="project-card" data-project="fedai-iha">
                     <div class="project-image">
-                        <i class="fas fa-plane"></i>
+                        <img src="images/fedai-takim-lab.jpeg" alt="Fedai İHA Görev Sistemi" class="project-img">
                     </div>
                     <div class="project-content">
                         <h3>Fedai İHA Görev Sistemi</h3>
@@ -58,13 +101,13 @@
                             <span class="tech-tag">MAVLink</span>
                             <span class="tech-tag">Ubiquiti</span>
                         </div>
-                        <button class="project-details-btn">Detayları Gör</button>
+                        <button class="project-details-btn" data-translate="projects.details">Detayları Gör</button>
                     </div>
                 </div>
 
                 <div class="project-card" data-project="kamuflaj-tespit">
                     <div class="project-image">
-                        <i class="fas fa-eye"></i>
+                        <img src="images/fedai-iha-model-sergisi.png" alt="Kamuflajlı Hedef Tespiti" class="project-img">
                     </div>
                     <div class="project-content">
                         <h3>Kamuflajlı Hedef Tespiti</h3>
@@ -75,13 +118,13 @@
                             <span class="tech-tag">Computer Vision</span>
                             <span class="tech-tag">AI/ML</span>
                         </div>
-                        <button class="project-details-btn">Detayları Gör</button>
+                        <button class="project-details-btn" data-translate="projects.details">Detayları Gör</button>
                     </div>
                 </div>
 
                 <div class="project-card" data-project="otonom-ucus">
                     <div class="project-image">
-                        <i class="fas fa-satellite"></i>
+                        <img src="images/fedai-iha-montaj-calismasi.png" alt="Otonom Uçuş Sistemi" class="project-img">
                     </div>
                     <div class="project-content">
                         <h3>Otonom Uçuş Sistemi</h3>
@@ -92,13 +135,13 @@
                             <span class="tech-tag">PID Control</span>
                             <span class="tech-tag">ROS</span>
                         </div>
-                        <button class="project-details-btn">Detayları Gör</button>
+                        <button class="project-details-btn" data-translate="projects.details">Detayları Gör</button>
                     </div>
                 </div>
 
                 <div class="project-card" data-project="haberlesme">
                     <div class="project-image">
-                        <i class="fas fa-wifi"></i>
+                        <img src="images/fedai-tanitim-ziyaret.jpeg" alt="Gelişmiş Haberleşme Sistemi" class="project-img">
                     </div>
                     <div class="project-content">
                         <h3>Gelişmiş Haberleşme Sistemi</h3>
@@ -109,13 +152,13 @@
                             <span class="tech-tag">Mesh Network</span>
                             <span class="tech-tag">FPV</span>
                         </div>
-                        <button class="project-details-btn">Detayları Gör</button>
+                        <button class="project-details-btn" data-translate="projects.details">Detayları Gör</button>
                     </div>
                 </div>
 
                 <div class="project-card" data-project="gimbal">
                     <div class="project-image">
-                        <i class="fas fa-camera"></i>
+                        <img src="images/fedai-uretim-asamasi.jpeg" alt="Gimbal Stabilizasyon Sistemi" class="project-img">
                     </div>
                     <div class="project-content">
                         <h3>Gimbal Stabilizasyon Sistemi</h3>
@@ -126,13 +169,13 @@
                             <span class="tech-tag">Brushless Motors</span>
                             <span class="tech-tag">PID</span>
                         </div>
-                        <button class="project-details-btn">Detayları Gör</button>
+                        <button class="project-details-btn" data-translate="projects.details">Detayları Gör</button>
                     </div>
                 </div>
 
                 <div class="project-card" data-project="batarya">
                     <div class="project-image">
-                        <i class="fas fa-battery-full"></i>
+                        <img src="images/fedai-okul-etkinligi-1.jpeg" alt="Akıllı Batarya Yönetimi" class="project-img">
                     </div>
                     <div class="project-content">
                         <h3>Akıllı Batarya Yönetimi</h3>
@@ -143,7 +186,7 @@
                             <span class="tech-tag">Cell Balancing</span>
                             <span class="tech-tag">Telemetry</span>
                         </div>
-                        <button class="project-details-btn">Detayları Gör</button>
+                        <button class="project-details-btn" data-translate="projects.details">Detayları Gör</button>
                     </div>
                 </div>
             </div>
@@ -194,10 +237,10 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <i class="fas fa-plane"></i>
-                    <span>Fedai Takımı</span>
-                </div>
-                <p>&copy; 2024 Fedai Takımı. Tüm hakları saklıdır.</p>
+                                    <img src="images/fedai-logo.jpg" alt="Fedai Logo" class="footer-logo-img">
+                <span>Fedai</span>
+            </div>
+            <p>&copy; 2024 Fedai. Tüm hakları saklıdır.</p>
                 <div class="footer-links">
                     <a href="index.html">Ana Sayfa</a>
                     <a href="about.html">Hakkımızda</a>
@@ -210,7 +253,28 @@
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h3>Çerez Kullanımı</h3>
+                <p>Bu web sitesi deneyiminizi geliştirmek için çerezler kullanmaktadır. Sitemizi kullanmaya devam ederek çerez kullanımını kabul etmiş sayılırsınız.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn accept" id="acceptCookies">Kabul Et</button>
+                <button class="cookie-btn decline" id="declineCookies">Reddet</button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
     <script src="projects.js"></script>
+    <script src="script.js"></script>
+    <script src="translate.js"></script>
 </body>
 </html>

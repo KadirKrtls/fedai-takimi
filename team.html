@@ -3,27 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Takımımız - Fedai Takımı</title>
+    <title>Takımımız - Fedai</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-plane"></i>
-                <span>Fedai Takımı</span>
+                <img src="images/fedai-logo.jpg" alt="Fedai Logo" class="nav-logo-img">
+                <span>Fedai</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
-                <li><a href="about.html" class="nav-link">Hakkımızda</a></li>
-                <li><a href="projects.html" class="nav-link">Projelerimiz</a></li>
-                <li><a href="competitions.html" class="nav-link">Yarışmalar</a></li>
-                <li><a href="team.html" class="nav-link active">Takımımız</a></li>
-                <li><a href="contact.html" class="nav-link">İletişim</a></li>
+                <li><a href="index.html" class="nav-link" data-translate="nav.home">Ana Sayfa</a></li>
+                <li><a href="about.html" class="nav-link" data-translate="nav.about">Hakkımızda</a></li>
+                <li><a href="projects.html" class="nav-link" data-translate="nav.projects">Projelerimiz</a></li>
+                <li><a href="competitions.html" class="nav-link" data-translate="nav.competitions">Yarışmalar</a></li>
+                <li><a href="team.html" class="nav-link active" data-translate="nav.team">Takımımız</a></li>
+                <li><a href="contact.html" class="nav-link" data-translate="nav.contact">İletişim</a></li>
             </ul>
+            <div class="search-container">
+                <input type="text" class="search-input" id="searchInput" placeholder="Ara..." data-translate="search.placeholder">
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+            <div class="language-switcher">
+                <button class="language-btn" id="languageBtn" aria-expanded="false" aria-controls="languageDropdown">
+                    <img src="assets/icons/tr.svg" alt="Turkish" class="flag-icon">
+                    <span class="language-text">TR</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="language-dropdown" id="languageDropdown">
+                    <div class="language-option active" data-lang="tr" aria-current="true">
+                        <img src="assets/icons/tr.svg" alt="Turkish" class="flag-icon">
+                        <span class="language-text">Türkçe</span>
+                    </div>
+                    <div class="language-option" data-lang="en">
+                        <img src="assets/icons/en.svg" alt="English" class="flag-icon">
+                        <span class="language-text">English</span>
+                    </div>
+                </div>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -32,11 +61,25 @@
         </div>
     </nav>
 
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="breadcrumb-container">
+            <ul class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="index.html" class="breadcrumb-link">Ana Sayfa</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <span class="breadcrumb-current">Takımımız</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Team Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Takımımız</h1>
-            <p>Uzmanlık alanlarımız ve görevlerimiz</p>
+            <h1 data-translate="team.title">Takımımız</h1>
+            <p data-translate="team.subtitle">Uzmanlık alanlarımız ve görevlerimiz</p>
         </div>
     </section>
 
@@ -343,10 +386,10 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <i class="fas fa-plane"></i>
-                    <span>Fedai Takımı</span>
-                </div>
-                <p>&copy; 2024 Fedai Takımı. Tüm hakları saklıdır.</p>
+                                    <img src="images/fedai-logo.jpg" alt="Fedai Logo" class="footer-logo-img">
+                <span>Fedai</span>
+            </div>
+            <p>&copy; 2024 Fedai. Tüm hakları saklıdır.</p>
                 <div class="footer-links">
                     <a href="index.html">Ana Sayfa</a>
                     <a href="about.html">Hakkımızda</a>
@@ -359,7 +402,28 @@
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h3>Çerez Kullanımı</h3>
+                <p>Bu web sitesi deneyiminizi geliştirmek için çerezler kullanmaktadır. Sitemizi kullanmaya devam edarak çerez kullanımını kabul etmiş sayılırsınız.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn accept" id="acceptCookies">Kabul Et</button>
+                <button class="cookie-btn decline" id="declineCookies">Reddet</button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
     <script src="team.js"></script>
+    <script src="script.js"></script>
+    <script src="translate.js"></script>
 </body>
 </html>

@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "projects": "Projelerimiz",
+    "competitions": "Yarışmalar",
+    "team": "Takımımız",
+    "contact": "İletişim"
+  },
+  "search": {
+    "placeholder": "Ara..."
+  },
+  "hero": {
+    "title": "Fedai",
+    "subtitle": "Recep Tayyip Erdoğan Üniversitesi İHA Ekibi",
+    "description": "İHA projelerimizi geliştiriyoruz"
+  },
+  "overview": {
+    "projects": "8 farklı İHA projesi ile yenilikçi çözümler geliştiriyoruz.",
+    "projects.link": "Detayları Gör",
+    "team": "4 farklı birimde 15+ uzman takım üyesi ile çalışıyoruz.",
+    "team.link": "Takımı Tanı",
+    "competitions": "5 farklı yarışmada başarılar elde ettik, 3 ödül kazandık.",
+    "competitions.link": "Başarılarımız",
+    "contact": "Bizimle iletişime geçin, projelerimiz hakkında bilgi alın.",
+    "contact.link": "İletişime Geç"
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "subtitle": "Biz kimiz ve ne yapıyoruz?",
+    "description": "Fedai, Recep Tayyip Erdoğan Üniversitesi öğrencilerinden oluşan bir İHA takımıdır. TEKNOFEST yarışmalarında başarılar elde etmiş ve sürekli kendini geliştiren bir ekibiz.",
+    "who": {
+      "title": "Biz Kimiz?",
+      "description1": "Fedai Takımı, Recep Tayyip Erdoğan Üniversitesi öğrencilerinden oluşan, İHA teknolojileri alanında uzmanlaşmış bir öğrenci topluluğudur. 2020 yılında kurulan takımımız, otonom uçuş sistemleri, görüntü işleme, yapay zeka ve makine öğrenmesi alanlarında yenilikçi çözümler geliştirmektedir.",
+      "description2": "Takımımız, Türkiye'nin önde gelen İHA yarışmalarında başarılar elde etmiş, ulusal ve uluslararası projelerde yer almıştır. Geleceğin havacılık mühendislerini yetiştirmeyi hedefleyen ekibimiz, sürekli öğrenme ve gelişim odaklı çalışmaktadır."
+    },
+    "journey": {
+      "title": "Yolculuğumuz"
+    },
+    "stats": {
+      "title": "Rakamlarla Fedai Takımı"
+    },
+    "goals": {
+      "title": "Hedeflerimiz",
+      "teknofest": {
+        "title": "TEKNOFEST Şampiyonluğu",
+        "description": "2024 TEKNOFEST İHA Yarışması'nda şampiyon olmayı hedefliyoruz."
+      },
+      "international": {
+        "title": "Uluslararası Başarı",
+        "description": "Uluslararası İHA yarışmalarında Türkiye'yi temsil etmek istiyoruz."
+      },
+      "industry": {
+        "title": "Endüstri İşbirlikleri",
+        "description": "Savunma sanayi ve teknoloji şirketleri ile işbirlikleri kurmayı hedefliyoruz."
+      },
+      "academic": {
+        "title": "Akademik Gelişim",
+        "description": "Takım üyelerimizin akademik kariyerlerini desteklemek ve yüksek lisans/doktora programlarına yönlendirmek."
+      }
+    },
+    "timeline": {
+      "2020": {
+        "title": "Kuruluş",
+        "description": "Fedai Takımı, Recep Tayyip Erdoğan Üniversitesi'nde kuruldu. İlk üyelerimiz ile birlikte İHA teknolojileri alanında çalışmaya başladık."
+      },
+      "2021": {
+        "title": "İlk Projeler",
+        "description": "İlk İHA projelerimizi geliştirdik. Otonom uçuş sistemleri ve temel görüntü işleme algoritmaları üzerinde çalışmaya başladık."
+      },
+      "2022": {
+        "title": "İlk Yarışma Deneyimi",
+        "description": "ODTÜ İHA Yarışması'na katıldık. İlk kez ulusal bir yarışmada yer alarak deneyim kazandık ve takım çalışmasını geliştirdik."
+      },
+      "2023": {
+        "title": "Başarılar",
+        "description": "TEKNOFEST İHA Yarışması'nda finalist olduk. İTÜ İHA Yarışması'nda 3. olarak ödül kazandık. Kamuflajlı hedef tespiti projemiz ile öne çıktık."
+      },
+      "2024": {
+        "title": "Gelişim",
+        "description": "15+ üyeli güçlü bir ekibe dönüştük. 8 farklı proje geliştirdik. TEKNOFEST 2024'e hazırlanıyoruz."
+      }
+    },
+    "vision": {
+      "title": "Vizyonumuz",
+      "description": "Türkiye'nin önde gelen İHA teknolojilerini geliştiren, ulusal ve uluslararası yarışmalarda başarılar elde eden, geleceğin havacılık mühendislerini yetiştiren bir ekibiz. Teknoloji alanında sınırları zorlayan, yenilikçi çözümler üreten ve ülkemizin teknolojik gücüne katkıda bulunan bir topluluk olmayı hedefliyoruz."
+    },
+    "mission": {
+      "title": "Misyonumuz",
+      "description": "İnsansız hava araçları alanında yenilikçi çözümler üretmek, takım çalışması ve liderlik becerilerini geliştirmek, ülkemizin teknoloji alanındaki gücüne katkıda bulunmak. Öğrencilerin teorik bilgilerini pratiğe dökebilecekleri bir platform oluşturmak ve endüstri ile akademi arasında köprü kurmak."
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "item1": "Yenilikçilik ve sürekli gelişim",
+      "item2": "Takım çalışması ve dayanışma",
+      "item3": "Kalite ve mükemmellik arayışı",
+      "item4": "Ulusal teknoloji geliştirme sorumluluğu",
+      "item5": "Etik değerler ve şeffaflık",
+      "item6": "Sosyal sorumluluk bilinci"
+    }
+  },
+  "projects": {
+    "title": "Projelerimiz",
+    "subtitle": "Geliştirdiğimiz yenilikçi İHA sistemleri",
+    "details": "Detayları Gör"
+  },
+  "team": {
+    "title": "Takımımız",
+    "subtitle": "Uzmanlık alanlarımız ve görevlerimiz"
+  },
+  "competitions": {
+    "title": "Yarışmalar",
+    "subtitle": "Katıldığımız yarışmalar ve başarılarımız"
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Bizimle iletişime geçin"
+  },
+  "stats": {
+    "team.member": "Takım Üyesi",
+    "project": "Proje",
+    "competition": "Yarışma",
+    "award": "Ödül",
+    "unit": "Birim",
+    "year": "Yıl"
+  },
+  "blog": {
+    "title": "Son Gelişmeler",
+    "subtitle": "Fedai Takımı'nın en son haberleri ve projeleri"
+  },
+  "sponsors": {
+    "title": "Sponsorlarımız ve Partnerlerimiz",
+    "subtitle": "Fedai Takımı'nı destekleyen değerli kurumlar"
+  },
+  "newsletter": {
+    "title": "Güncel Kalın",
+    "subtitle": "Fedai Takımı'nın en son projeleri ve gelişmeleri hakkında bilgi almak için bültenimize abone olun.",
+    "button": "Abone Ol"
+  },
+  "footer": {
+    "copyright": "Tüm hakları saklıdır."
+  }
+}
