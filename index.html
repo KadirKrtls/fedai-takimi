@@ -17,12 +17,12 @@
                 <span>Fedai Takımı</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Ana Sayfa</a></li>
-                <li><a href="#about" class="nav-link">Hakkımızda</a></li>
-                <li><a href="#projects" class="nav-link">Projelerimiz</a></li>
-                <li><a href="#competitions" class="nav-link">Yarışmalar</a></li>
-                <li><a href="#team" class="nav-link">Takımımız</a></li>
-                <li><a href="#contact" class="nav-link">İletişim</a></li>
+                <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="about.html" class="nav-link">Hakkımızda</a></li>
+                <li><a href="projects.html" class="nav-link">Projelerimiz</a></li>
+                <li><a href="competitions.html" class="nav-link">Yarışmalar</a></li>
+                <li><a href="team.html" class="nav-link">Takımımız</a></li>
+                <li><a href="contact.html" class="nav-link">İletişim</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -32,23 +32,100 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Slider -->
     <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="hero-overlay"></div>
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h2>TEKNOFEST 2024</h2>
+                    <p>Fedai Takımı İHA Yarışmasında</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h2>Proje Geliştirme</h2>
+                    <p>Yenilikçi İHA Sistemleri</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h2>Takım Çalışması</h2>
+                    <p>15+ Uzman Takım Üyesi</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h2>Başarılarımız</h2>
+                    <p>5 Yarışma, 3 Ödül</p>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
         <div class="hero-content">
             <h1 class="hero-title">Fedai Takımı</h1>
             <p class="hero-subtitle">Recep Tayyip Erdoğan Üniversitesi İHA Ekibi</p>
             <p class="hero-description">Geleceğin teknolojisini bugünden inşa ediyoruz</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">Projelerimiz</a>
-                <a href="#team" class="btn btn-secondary">Takımımız</a>
-                <a href="#contact" class="btn btn-outline">İletişim</a>
+                <a href="projects.html" class="btn btn-primary">Projelerimiz</a>
+                <a href="team.html" class="btn btn-secondary">Takımımız</a>
+                <a href="contact.html" class="btn btn-outline">İletişim</a>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
+    </section>
+
+    <!-- Quick Overview Section -->
+    <section class="overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="overview-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Projelerimiz</h3>
+                    <p>8 farklı İHA projesi ile yenilikçi çözümler geliştiriyoruz.</p>
+                    <a href="projects.html" class="overview-link">Detayları Gör <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="overview-card">
+                    <div class="overview-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Takımımız</h3>
+                    <p>4 farklı birimde 15+ uzman takım üyesi ile çalışıyoruz.</p>
+                    <a href="team.html" class="overview-link">Takımı Tanı <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="overview-card">
+                    <div class="overview-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Yarışmalar</h3>
+                    <p>5 farklı yarışmada başarılar elde ettik, 3 ödül kazandık.</p>
+                    <a href="competitions.html" class="overview-link">Başarılarımız <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="overview-card">
+                    <div class="overview-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>İletişim</h3>
+                    <p>Bizimle iletişime geçin, projelerimiz hakkında bilgi alın.</p>
+                    <a href="contact.html" class="overview-link">İletişime Geç <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -97,286 +174,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-header">
-                <h2>Projelerimiz</h2>
-                <p>Geliştirdiğimiz yenilikçi İHA sistemleri</p>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-plane"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Fedai İHA Görev Sistemi</h3>
-                        <p>JetWing keşif İHA'sı hedef tespiti yapar, Buzzard saldırı İHA'sı mühimmat bırakır.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">RTK-GPS</span>
-                            <span class="tech-tag">YOLOv10</span>
-                            <span class="tech-tag">EfficientNet</span>
-                            <span class="tech-tag">MAVLink</span>
-                            <span class="tech-tag">Ubiquiti</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Kamuflajlı Hedef Tespiti</h3>
-                        <p>YOLOv10 ve DenseNet ile kamuflajlı askeri araç tespiti yapan gelişmiş görüntü işleme sistemi.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">YOLOv10</span>
-                            <span class="tech-tag">DenseNet</span>
-                            <span class="tech-tag">Computer Vision</span>
-                            <span class="tech-tag">AI/ML</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-satellite"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Otonom Uçuş Sistemi</h3>
-                        <p>GPS ve sensör füzyonu ile tam otonom uçuş gerçekleştiren gelişmiş kontrol sistemi.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Autopilot</span>
-                            <span class="tech-tag">Sensor Fusion</span>
-                            <span class="tech-tag">PID Control</span>
-                            <span class="tech-tag">ROS</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-wifi"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Gelişmiş Haberleşme Sistemi</h3>
-                        <p>Uzun mesafe, düşük gecikme süreli kriptolu haberleşme sistemi.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">LoRa</span>
-                            <span class="tech-tag">Encryption</span>
-                            <span class="tech-tag">Mesh Network</span>
-                            <span class="tech-tag">FPV</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-camera"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Gimbal Stabilizasyon Sistemi</h3>
-                        <p>3 eksenli gimbal ile profesyonel kalitede görüntü stabilizasyonu.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">3-Axis Gimbal</span>
-                            <span class="tech-tag">IMU</span>
-                            <span class="tech-tag">Brushless Motors</span>
-                            <span class="tech-tag">PID</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-battery-full"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Akıllı Batarya Yönetimi</h3>
-                        <p>LiPo batarya için gelişmiş BMS sistemi ve uçuş süresi optimizasyonu.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">BMS</span>
-                            <span class="tech-tag">LiPo</span>
-                            <span class="tech-tag">Cell Balancing</span>
-                            <span class="tech-tag">Telemetry</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Competitions Section -->
-    <section id="competitions" class="competitions">
-        <div class="container">
-            <div class="section-header">
-                <h2>Yarışmalar</h2>
-                <p>Katıldığımız yarışmalar ve başarılarımız</p>
-            </div>
-            <div class="competitions-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Yarışma Adı</th>
-                            <th>Kategori</th>
-                            <th>Yıl</th>
-                            <th>Durum</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>TEKNOFEST İHA Yarışması</td>
-                            <td>Serbest Görev</td>
-                            <td>2024</td>
-                            <td><span class="status ongoing">Devam Ediyor</span></td>
-                        </tr>
-                        <tr>
-                            <td>TEKNOFEST İHA Yarışması</td>
-                            <td>Serbest Görev</td>
-                            <td>2023</td>
-                            <td><span class="status completed">Finalist</span></td>
-                        </tr>
-                        <tr>
-                            <td>İTÜ İHA Yarışması</td>
-                            <td>Sabit Kanat</td>
-                            <td>2023</td>
-                            <td><span class="status completed">3. Olma</span></td>
-                        </tr>
-                        <tr>
-                            <td>ODTÜ İHA Yarışması</td>
-                            <td>Döner Kanat</td>
-                            <td>2022</td>
-                            <td><span class="status completed">Katılım</span></td>
-                        </tr>
-                        <tr>
-                            <td>Yıldız Teknik İHA Yarışması</td>
-                            <td>Serbest Görev</td>
-                            <td>2022</td>
-                            <td><span class="status completed">Katılım</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="team">
-        <div class="container">
-            <div class="section-header">
-                <h2>Takımımız</h2>
-                <p>Uzmanlık alanlarımız ve görevlerimiz</p>
-            </div>
-            <div class="team-grid">
-                <div class="team-card">
-                    <div class="team-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Yazılım Birimi</h3>
-                    <p>Otonom uçuş algoritmaları, görüntü işleme, yapay zeka ve makine öğrenmesi çözümleri geliştirir.</p>
-                    <ul>
-                        <li>Python, C++, ROS</li>
-                        <li>Computer Vision</li>
-                        <li>Machine Learning</li>
-                        <li>Embedded Systems</li>
-                    </ul>
-                </div>
-
-                <div class="team-card">
-                    <div class="team-icon">
-                        <i class="fas fa-microchip"></i>
-                    </div>
-                    <h3>Donanım Birimi</h3>
-                    <p>İHA tasarımı, üretimi, elektronik sistemler ve mekanik yapıların geliştirilmesinden sorumludur.</p>
-                    <ul>
-                        <li>CAD/CAM Tasarım</li>
-                        <li>PCB Tasarımı</li>
-                        <li>3D Baskı</li>
-                        <li>Mekanik Sistemler</li>
-                    </ul>
-                </div>
-
-                <div class="team-card">
-                    <div class="team-icon">
-                        <i class="fas fa-wifi"></i>
-                    </div>
-                    <h3>Haberleşme Birimi</h3>
-                    <p>Uzun mesafe haberleşme, veri iletimi, kriptolama ve güvenli iletişim sistemleri geliştirir.</p>
-                    <ul>
-                        <li>RF Haberleşme</li>
-                        <li>LoRa, WiFi</li>
-                        <li>Encryption</li>
-                        <li>Antenna Design</li>
-                    </ul>
-                </div>
-
-                <div class="team-card">
-                    <div class="team-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Görüntü İşleme Birimi</h3>
-                    <p>Hedef tespiti, nesne tanıma, görüntü analizi ve yapay zeka tabanlı görüntü işleme çözümleri.</p>
-                    <ul>
-                        <li>OpenCV</li>
-                        <li>YOLO, DenseNet</li>
-                        <li>Image Processing</li>
-                        <li>Deep Learning</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>İletişim</h2>
-                <p>Bizimle iletişime geçin</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>E-posta</h4>
-                            <p>fedai@rtu.edu.tr</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Adres</h4>
-                            <p>Recep Tayyip Erdoğan Üniversitesi<br>Rize, Türkiye</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Telefon</h4>
-                            <p>+90 464 223 61 61</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <h4>Sosyal Medya</h4>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="map-container">
-                    <h4>Konum</h4>
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.1234567890123!2d40.52123456789012!3d41.02345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAxJzIzLjQiTiA0MMKwMzEnMTYuNCJF!5e0!3m2!1str!2str!4v1234567890123" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -387,10 +184,12 @@
                 </div>
                 <p>&copy; 2024 Fedai Takımı. Tüm hakları saklıdır.</p>
                 <div class="footer-links">
-                    <a href="#home">Ana Sayfa</a>
-                    <a href="#about">Hakkımızda</a>
-                    <a href="#projects">Projeler</a>
-                    <a href="#contact">İletişim</a>
+                    <a href="index.html">Ana Sayfa</a>
+                    <a href="about.html">Hakkımızda</a>
+                    <a href="projects.html">Projeler</a>
+                    <a href="team.html">Takım</a>
+                    <a href="competitions.html">Yarışmalar</a>
+                    <a href="contact.html">İletişim</a>
                 </div>
             </div>
         </div>

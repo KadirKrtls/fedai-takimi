@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takımımız - Fedai Takımı</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-plane"></i>
+                <span>Fedai Takımı</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="about.html" class="nav-link">Hakkımızda</a></li>
+                <li><a href="projects.html" class="nav-link">Projelerimiz</a></li>
+                <li><a href="competitions.html" class="nav-link">Yarışmalar</a></li>
+                <li><a href="team.html" class="nav-link active">Takımımız</a></li>
+                <li><a href="contact.html" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Team Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Takımımız</h1>
+            <p>Uzmanlık alanlarımız ve görevlerimiz</p>
+        </div>
+    </section>
+
+    <!-- Organization Chart -->
+    <section class="org-chart">
+        <div class="container">
+            <h2>Organizasyon Şeması</h2>
+            <div class="chart-container">
+                <div class="chart-level-1">
+                    <div class="chart-item leader">
+                        <div class="chart-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3>Takım Lideri</h3>
+                        <p>Ahmet Yılmaz</p>
+                    </div>
+                </div>
+                
+                <div class="chart-connector"></div>
+                
+                <div class="chart-level-2">
+                    <div class="chart-item department" data-team="yazilim">
+                        <div class="chart-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Yazılım Ekibi</h3>
+                        <p>5 Üye</p>
+                    </div>
+                    <div class="chart-item department" data-team="donanim">
+                        <div class="chart-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Donanım Ekibi</h3>
+                        <p>4 Üye</p>
+                    </div>
+                    <div class="chart-item department" data-team="haberlesme">
+                        <div class="chart-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h3>Haberleşme Ekibi</h3>
+                        <p>3 Üye</p>
+                    </div>
+                    <div class="chart-item department" data-team="goruntu">
+                        <div class="chart-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Görüntü İşleme Ekibi</h3>
+                        <p>3 Üye</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Departments -->
+    <section class="team-departments">
+        <div class="container">
+            <div class="department-tabs">
+                <button class="tab-btn active" data-team="yazilim">Yazılım Ekibi</button>
+                <button class="tab-btn" data-team="donanim">Donanım Ekibi</button>
+                <button class="tab-btn" data-team="haberlesme">Haberleşme Ekibi</button>
+                <button class="tab-btn" data-team="goruntu">Görüntü İşleme Ekibi</button>
+            </div>
+
+            <!-- Yazılım Ekibi -->
+            <div class="department-content active" id="yazilim">
+                <div class="department-header">
+                    <h2>Yazılım Ekibi</h2>
+                    <p>Otonom uçuş algoritmaları, görüntü işleme, yapay zeka ve makine öğrenmesi çözümleri geliştirir.</p>
+                </div>
+                <div class="team-members">
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>Mehmet Kaya</h3>
+                            <p class="member-role">Takım Lideri</p>
+                            <p class="member-skills">Python, C++, ROS, Computer Vision</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>Ayşe Demir</h3>
+                            <p class="member-role">Yazılım Geliştirici</p>
+                            <p class="member-skills">Python, TensorFlow, OpenCV, ML</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>Ali Özkan</h3>
+                            <p class="member-role">Embedded Developer</p>
+                            <p class="member-skills">C++, Arduino, STM32, RTOS</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>Fatma Şahin</h3>
+                            <p class="member-role">AI/ML Engineer</p>
+                            <p class="member-skills">PyTorch, YOLO, Deep Learning</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>Can Yıldız</h3>
+                            <p class="member-role">Software Engineer</p>
+                            <p class="member-skills">Python, Django, PostgreSQL</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Donanım Ekibi -->
+            <div class="department-content" id="donanim">
+                <div class="department-header">
+                    <h2>Donanım Ekibi</h2>
+                    <p>İHA tasarımı, üretimi, elektronik sistemler ve mekanik yapıların geliştirilmesinden sorumludur.</p>
+                </div>
+                <div class="team-members">
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>Burak Arslan</h3>
+                            <p class="member-role">Mekanik Tasarım</p>
+                            <p class="member-skills">SolidWorks, AutoCAD, 3D Baskı</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>Zeynep Kaya</h3>
+                            <p class="member-role">Elektronik Tasarım</p>
+                            <p class="member-skills">PCB Design, Altium, Arduino</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>Emre Çelik</h3>
+                            <p class="member-role">Üretim Sorumlusu</p>
+                            <p class="member-skills">CNC, 3D Baskı, Montaj</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>Deniz Yılmaz</h3>
+                            <p class="member-role">Test Mühendisi</p>
+                            <p class="member-skills">Test Sistemleri, Kalite Kontrol</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Haberleşme Ekibi -->
+            <div class="department-content" id="haberlesme">
+                <div class="department-header">
+                    <h2>Haberleşme Ekibi</h2>
+                    <p>Uzun mesafe haberleşme, veri iletimi, kriptolama ve güvenli iletişim sistemleri geliştirir.</p>
+                </div>
+                <div class="team-members">
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>Gökhan Özkan</h3>
+                            <p class="member-role">RF Mühendisi</p>
+                            <p class="member-skills">RF Design, Antenna, LoRa</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>Elif Demir</h3>
+                            <p class="member-role">Network Engineer</p>
+                            <p class="member-skills">Mesh Network, WiFi, Encryption</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>Mert Kaya</h3>
+                            <p class="member-role">FPV Uzmanı</p>
+                            <p class="member-skills">FPV Systems, Video Transmission</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Görüntü İşleme Ekibi -->
+            <div class="department-content" id="goruntu">
+                <div class="department-header">
+                    <h2>Görüntü İşleme Ekibi</h2>
+                    <p>Hedef tespiti, nesne tanıma, görüntü analizi ve yapay zeka tabanlı görüntü işleme çözümleri.</p>
+                </div>
+                <div class="team-members">
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>Selin Arslan</h3>
+                            <p class="member-role">Computer Vision Engineer</p>
+                            <p class="member-skills">OpenCV, YOLO, Image Processing</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>Ahmet Yıldız</h3>
+                            <p class="member-role">Deep Learning Engineer</p>
+                            <p class="member-skills">TensorFlow, PyTorch, CNN</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>Büşra Çelik</h3>
+                            <p class="member-role">Data Scientist</p>
+                            <p class="member-skills">Data Analysis, ML, Statistics</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-plane"></i>
+                    <span>Fedai Takımı</span>
+                </div>
+                <p>&copy; 2024 Fedai Takımı. Tüm hakları saklıdır.</p>
+                <div class="footer-links">
+                    <a href="index.html">Ana Sayfa</a>
+                    <a href="about.html">Hakkımızda</a>
+                    <a href="projects.html">Projeler</a>
+                    <a href="team.html">Takım</a>
+                    <a href="competitions.html">Yarışmalar</a>
+                    <a href="contact.html">İletişim</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="team.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projelerimiz - Fedai Takımı</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-plane"></i>
+                <span>Fedai Takımı</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="about.html" class="nav-link">Hakkımızda</a></li>
+                <li><a href="projects.html" class="nav-link active">Projelerimiz</a></li>
+                <li><a href="competitions.html" class="nav-link">Yarışmalar</a></li>
+                <li><a href="team.html" class="nav-link">Takımımız</a></li>
+                <li><a href="contact.html" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Projelerimiz</h1>
+            <p>Geliştirdiğimiz yenilikçi İHA sistemleri</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-page">
+        <div class="container">
+            <div class="projects-grid">
+                <div class="project-card" data-project="fedai-iha">
+                    <div class="project-image">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Fedai İHA Görev Sistemi</h3>
+                        <p>JetWing keşif İHA'sı hedef tespiti yapar, Buzzard saldırı İHA'sı mühimmat bırakır.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">RTK-GPS</span>
+                            <span class="tech-tag">YOLOv10</span>
+                            <span class="tech-tag">EfficientNet</span>
+                            <span class="tech-tag">MAVLink</span>
+                            <span class="tech-tag">Ubiquiti</span>
+                        </div>
+                        <button class="project-details-btn">Detayları Gör</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="kamuflaj-tespit">
+                    <div class="project-image">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Kamuflajlı Hedef Tespiti</h3>
+                        <p>YOLOv10 ve DenseNet ile kamuflajlı askeri araç tespiti yapan gelişmiş görüntü işleme sistemi.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">YOLOv10</span>
+                            <span class="tech-tag">DenseNet</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">AI/ML</span>
+                        </div>
+                        <button class="project-details-btn">Detayları Gör</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="otonom-ucus">
+                    <div class="project-image">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Otonom Uçuş Sistemi</h3>
+                        <p>GPS ve sensör füzyonu ile tam otonom uçuş gerçekleştiren gelişmiş kontrol sistemi.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Autopilot</span>
+                            <span class="tech-tag">Sensor Fusion</span>
+                            <span class="tech-tag">PID Control</span>
+                            <span class="tech-tag">ROS</span>
+                        </div>
+                        <button class="project-details-btn">Detayları Gör</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="haberlesme">
+                    <div class="project-image">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Gelişmiş Haberleşme Sistemi</h3>
+                        <p>Uzun mesafe, düşük gecikme süreli kriptolu haberleşme sistemi.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">LoRa</span>
+                            <span class="tech-tag">Encryption</span>
+                            <span class="tech-tag">Mesh Network</span>
+                            <span class="tech-tag">FPV</span>
+                        </div>
+                        <button class="project-details-btn">Detayları Gör</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="gimbal">
+                    <div class="project-image">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Gimbal Stabilizasyon Sistemi</h3>
+                        <p>3 eksenli gimbal ile profesyonel kalitede görüntü stabilizasyonu.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">3-Axis Gimbal</span>
+                            <span class="tech-tag">IMU</span>
+                            <span class="tech-tag">Brushless Motors</span>
+                            <span class="tech-tag">PID</span>
+                        </div>
+                        <button class="project-details-btn">Detayları Gör</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="batarya">
+                    <div class="project-image">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Akıllı Batarya Yönetimi</h3>
+                        <p>LiPo batarya için gelişmiş BMS sistemi ve uçuş süresi optimizasyonu.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">BMS</span>
+                            <span class="tech-tag">LiPo</span>
+                            <span class="tech-tag">Cell Balancing</span>
+                            <span class="tech-tag">Telemetry</span>
+                        </div>
+                        <button class="project-details-btn">Detayları Gör</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="project-details">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="project-info">
+                            <h2 id="modalTitle">Fedai İHA Görev Sistemi</h2>
+                            <p id="modalSubtitle">Gelişmiş İHA görev sistemi</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project-description">
+                        <h3>Proje Açıklaması</h3>
+                        <p id="modalDescription">Proje açıklaması burada yer alacak.</p>
+                    </div>
+
+                    <div class="project-specs">
+                        <h3>Teknik Özellikler</h3>
+                        <div class="specs-grid" id="modalSpecs">
+                            <!-- Teknik özellikler buraya gelecek -->
+                        </div>
+                    </div>
+
+                    <div class="project-gallery">
+                        <h3>Proje Görselleri</h3>
+                        <div class="gallery-grid" id="modalGallery">
+                            <!-- Görseller buraya gelecek -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-plane"></i>
+                    <span>Fedai Takımı</span>
+                </div>
+                <p>&copy; 2024 Fedai Takımı. Tüm hakları saklıdır.</p>
+                <div class="footer-links">
+                    <a href="index.html">Ana Sayfa</a>
+                    <a href="about.html">Hakkımızda</a>
+                    <a href="projects.html">Projeler</a>
+                    <a href="team.html">Takım</a>
+                    <a href="competitions.html">Yarışmalar</a>
+                    <a href="contact.html">İletişim</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="projects.js"></script>
+</body>
+</html>
