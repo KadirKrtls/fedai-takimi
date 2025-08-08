@@ -3,7 +3,7 @@ const projectData = {
     'fedai-iha': {
         title: 'Fedai İHA Görev Sistemi',
         subtitle: 'Gelişmiş İHA görev sistemi',
-        description: 'JetWing keşif İHA'sı hedef tespiti yapar, Buzzard saldırı İHA'sı mühimmat bırakır. Sistem, otonom uçuş, hedef tespiti ve görev koordinasyonu için geliştirilmiştir.',
+        description: 'JetWing kesif IHA\'si hedef tespiti yapar, Buzzard saldiri IHA\'si muhimmat birakir. Sistem, otonom ucus, hedef tespiti ve gorev koordinasyonu icin gelistirilmistir.',
         icon: 'fas fa-plane',
         specs: [
             { label: 'Uçuş Süresi', value: '45 dakika' },
@@ -14,15 +14,15 @@ const projectData = {
             { label: 'GPS Hassasiyeti', value: '±1m' }
         ],
         gallery: [
-            'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-            'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-            'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            'images/fedai-takim-lab.jpeg',
+            'images/fedai-iha-montaj-calismasi.png',
+            'images/fedai-iha-model-sergisi.png'
         ]
     },
     'kamuflaj-tespit': {
         title: 'Kamuflajlı Hedef Tespiti',
         subtitle: 'Gelişmiş görüntü işleme sistemi',
-        description: 'YOLOv10 ve DenseNet ile kamuflajlı askeri araç tespiti yapan gelişmiş görüntü işleme sistemi. Sistem, farklı hava koşullarında ve çeşitli kamuflaj türlerinde %95 doğruluk oranına sahiptir.',
+        description: 'YOLOv10 ve DenseNet ile kamuflajli askeri arac tespiti yapan gelismis goruntu isleme sistemi. Sistem, farkli hava kosullarinda ve cesitli kamuflaj turlerinde %95 dogruluk oranina sahiptir.',
         icon: 'fas fa-eye',
         specs: [
             { label: 'Tespit Doğruluğu', value: '%95' },
@@ -33,15 +33,15 @@ const projectData = {
             { label: 'Model Boyutu', value: '15 MB' }
         ],
         gallery: [
-            'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-            'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-            'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            'images/fedai-iha-model-sergisi.png',
+            'images/fedai-takim-lab.jpeg',
+            'images/fedai-iha-montaj-calismasi.png'
         ]
     },
     'otonom-ucus': {
         title: 'Otonom Uçuş Sistemi',
         subtitle: 'GPS ve sensör füzyonu tabanlı',
-        description: 'GPS ve sensör füzyonu ile tam otonom uçuş gerçekleştiren gelişmiş kontrol sistemi. Sistem, rüzgar koşullarına adaptif olarak çalışır ve güvenli iniş noktaları belirler.',
+        description: 'GPS ve sensor fuzyonu ile tam otonom ucus gerceklestiren gelismis kontrol sistemi. Sistem, ruzgar kosullarina adaptif olarak calisir ve guvenli inis noktalari belirler.',
         icon: 'fas fa-satellite',
         specs: [
             { label: 'GPS Hassasiyeti', value: '±0.5m' },
@@ -52,15 +52,15 @@ const projectData = {
             { label: 'Kontrol Frekansı', value: '100 Hz' }
         ],
         gallery: [
-            'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-            'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-            'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            'images/fedai-iha-montaj-calismasi.png',
+            'images/fedai-takim-lab.jpeg',
+            'images/fedai-iha-model-sergisi.png'
         ]
     },
     'haberlesme': {
         title: 'Gelişmiş Haberleşme Sistemi',
         subtitle: 'Uzun mesafe kriptolu haberleşme',
-        description: 'Uzun mesafe, düşük gecikme süreli kriptolu haberleşme sistemi. Mesh network yapısı ile çoklu İHA koordinasyonu sağlar.',
+        description: 'Uzun mesafe, dusuk gecikme sureli kriptolu haberlesme sistemi. Mesh network yapisi ile coklu IHA koordinasyonu saglar.',
         icon: 'fas fa-wifi',
         specs: [
             { label: 'Maksimum Mesafe', value: '20 km' },
@@ -71,15 +71,15 @@ const projectData = {
             { label: 'Mesh Node Sayısı', value: '8 adet' }
         ],
         gallery: [
-            'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-            'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-            'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            'images/fedai-iha-model-sergisi.png',
+            'images/fedai-takim-lab.jpeg',
+            'images/fedai-iha-montaj-calismasi.png'
         ]
     },
     'gimbal': {
         title: 'Gimbal Stabilizasyon Sistemi',
         subtitle: '3 eksenli profesyonel stabilizasyon',
-        description: '3 eksenli gimbal ile profesyonel kalitede görüntü stabilizasyonu. Brushless motorlar ve gelişmiş PID kontrol algoritması ile mükemmel stabilizasyon sağlar.',
+        description: '3 eksenli gimbal ile profesyonel kalitede goruntu stabilizasyonu. Brushless motorlar ve gelismis PID kontrol algoritmasi ile mukemmel stabilizasyon saglar.',
         icon: 'fas fa-camera',
         specs: [
             { label: 'Stabilizasyon Ekseni', value: '3 eksen' },
@@ -90,15 +90,15 @@ const projectData = {
             { label: 'Ağırlık', value: '800g' }
         ],
         gallery: [
-            'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-            'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-            'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            'images/fedai-iha-montaj-calismasi.png',
+            'images/fedai-takim-lab.jpeg',
+            'images/fedai-iha-model-sergisi.png'
         ]
     },
     'batarya': {
         title: 'Akıllı Batarya Yönetimi',
         subtitle: 'LiPo batarya optimizasyon sistemi',
-        description: 'LiPo batarya için gelişmiş BMS sistemi ve uçuş süresi optimizasyonu. Hücre dengesi, sıcaklık kontrolü ve akıllı şarj yönetimi ile maksimum performans sağlar.',
+        description: 'LiPo batarya icin gelismis BMS sistemi ve ucus suresi optimizasyonu. Hucre dengesi, sicaklik kontrolu ve akilli sarj yonetimi ile maksimum performans saglar.',
         icon: 'fas fa-battery-full',
         specs: [
             { label: 'Kapasite', value: '6000 mAh' },
@@ -109,9 +109,9 @@ const projectData = {
             { label: 'Ağırlık', value: '850g' }
         ],
         gallery: [
-            'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-            'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-            'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+            'images/fedai-okul-etkinligi-1.jpeg',
+            'images/fedai-takim-lab.jpeg',
+            'images/fedai-iha-model-sergisi.png'
         ]
     }
 };
