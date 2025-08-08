@@ -348,20 +348,20 @@ if (newsletterForm && newsletterEmail && newsletterSuccess && newsletterError) {
     });
     
     function showNewsletterMessage(message, type) {
-        newsletterSuccess.style.display = 'none';
-        newsletterError.style.display = 'none';
+        newsletterSuccess.classList.remove('show');
+        newsletterError.classList.remove('show');
         
         if (type === 'success') {
             newsletterSuccess.textContent = message;
-            newsletterSuccess.style.display = 'block';
+            newsletterSuccess.classList.add('show');
         } else if (type === 'error') {
             newsletterError.textContent = message;
-            newsletterError.style.display = 'block';
+            newsletterError.classList.add('show');
         }
         
         setTimeout(() => {
-            newsletterSuccess.style.display = 'none';
-            newsletterError.style.display = 'none';
+            newsletterSuccess.classList.remove('show');
+            newsletterError.classList.remove('show');
         }, 5000);
     }
 }
