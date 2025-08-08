@@ -409,7 +409,7 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 60px);
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -1622,24 +1622,13 @@ td {
     }
 }
 
-/* Küçük telefonlar: menü her zaman görünür (yatay kaydırmalı) */
+/* 640px altında da hamburger menü kullanılsın (daha derli toplu) */
 @media (max-width: 640px) {
-    .nav-container { flex-wrap: wrap; height: auto; padding-top: 6px; padding-bottom: 6px; }
-    .hamburger { display: none !important; }
-    .nav-menu {
-        position: static;
-        left: auto; top: auto;
-        flex-direction: row;
-        width: 100%;
-        justify-content: flex-start;
-        gap: 1rem;
-        padding-top: 6px;
-        overflow-x: auto;
-        background: transparent;
-    }
-    .nav-menu.active { left: auto; }
-    .nav-menu::-webkit-scrollbar{ display:none; }
-    .nav-link{ font-size: .95rem; white-space: nowrap; padding: 6px 2px; }
+    .nav-container { height: 56px; }
+    .hamburger { display: block !important; }
+    .nav-menu { position: fixed; left: -100%; top: 56px; }
+    .nav-menu.active { left: 0; }
+    .language-btn { padding: 4px 8px; font-size: .85rem; }
 }
 
 @media (max-width: 480px) {
