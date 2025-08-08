@@ -441,7 +441,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
 }
 
 .slide-content {
@@ -450,20 +451,23 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    z-index: 2;
+    color: white;
+    z-index: 3;
+    max-width: 600px;
+    padding: 0 20px;
 }
 
 .slide-content h2 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    animation: fadeInUp 1s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .slide-content p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     opacity: 0.9;
-    animation: fadeInUp 1s ease 0.2s both;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .slider-controls {
@@ -523,27 +527,37 @@ body {
     z-index: 5;
     max-width: 800px;
     padding: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .hero-title {
     font-size: 4rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     animation: fadeInUp 1s ease;
+    line-height: 1.2;
 }
 
 .hero-subtitle {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     opacity: 0.9;
     animation: fadeInUp 1s ease 0.2s both;
+    line-height: 1.4;
 }
 
 .hero-description {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     opacity: 0.8;
     animation: fadeInUp 1s ease 0.4s both;
+    line-height: 1.5;
+    max-width: 600px;
 }
 
 .hero-buttons {
@@ -1340,7 +1354,7 @@ td {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: white;
+        background-color: rgba(0, 0, 0, 0.9);
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -1353,7 +1367,8 @@ td {
     }
 
     .hamburger {
-        display: flex;
+        display: block;
+        cursor: pointer;
     }
 
     .hamburger.active .bar:nth-child(2) {
@@ -1382,7 +1397,7 @@ td {
 
     .hero-buttons {
         flex-direction: column;
-        align-items: center;
+        gap: 1rem;
     }
 
     .slide-content h2 {
@@ -1390,16 +1405,15 @@ td {
     }
 
     .slide-content p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .slider-controls {
-        padding: 0 1rem;
+        display: none;
     }
 
     .slider-btn {
-        width: 40px;
-        height: 40px;
+        display: none;
     }
 
     .about-content {
