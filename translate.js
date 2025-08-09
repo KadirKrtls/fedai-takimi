@@ -124,19 +124,7 @@ class Translator {
 
     updateHtmlLang() {
         document.documentElement.lang = this.currentLang;
-        
-        // URL'yi güncelle (opsiyonel)
-        const currentUrl = new URL(window.location);
-        if (this.currentLang === 'en') {
-            currentUrl.pathname = '/en' + currentUrl.pathname;
-        } else {
-            currentUrl.pathname = currentUrl.pathname.replace('/en', '');
-        }
-        
-        // History API ile URL'yi güncelle (sayfa yenilenmeden)
-        if (currentUrl.pathname !== window.location.pathname) {
-            window.history.pushState({}, '', currentUrl);
-        }
+        // URL manipülasyonu kapatıldı; gerçek /en yolları olmadığından 404 riski oluşuyordu.
     }
 
     initLanguageSwitcher() {

@@ -5,36 +5,27 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
             // Get form data
             const formData = new FormData(contactForm);
             const name = formData.get('name');
             const email = formData.get('email');
-            const phone = formData.get('phone');
             const subject = formData.get('subject');
             const message = formData.get('message');
-            
-            // Simple validation
+
+            // Basic validation; block submit only if invalid
             if (!name || !email || !subject || !message) {
+                e.preventDefault();
                 showNotification('Lütfen tüm zorunlu alanları doldurun.', 'error');
                 return;
             }
-            
-            // Email validation
+
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
+                e.preventDefault();
                 showNotification('Lütfen geçerli bir e-posta adresi girin.', 'error');
                 return;
             }
-            
-            // Simulate form submission
-            showNotification('Mesajınız gönderiliyor...', 'info');
-            
-            setTimeout(() => {
-                showNotification('Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.', 'success');
-                contactForm.reset();
-            }, 2000);
+            // Valid ise doğal form gönderimine izin verilir (Formspree)
         });
     }
     
