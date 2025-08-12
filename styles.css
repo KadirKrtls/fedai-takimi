@@ -474,7 +474,7 @@ body {
 }
 
 .slide-content h1 {
-    font-size: 3.2rem;
+    font-size: 4.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -2565,7 +2565,7 @@ td {
 
     /* Hero metin boyutları */
     .slide-content { padding: 0 14px; }
-    .slide-content h1.hero-title { font-size: 2.4rem; margin-bottom: 0.6rem; }
+    .slide-content h1.hero-title { font-size: 3.2rem; margin-bottom: 0.6rem; }
     .slide-content h2 { font-size: 1.3rem; margin-bottom: 0.6rem; }
     .slide-content .hero-subtitle { font-size: 1.05rem; margin-bottom: 0.6rem; }
     .slide-content .hero-description { font-size: 1rem; margin-bottom: 1rem; }
@@ -2587,7 +2587,7 @@ td {
 /* Küçük tablet ve telefonlar için ek düzenleme */
 @media (max-width: 768px) {
     .search-container { display: none; }
-    .slide-content h1.hero-title { font-size: 2.2rem; }
+    .slide-content h1.hero-title { font-size: 2.8rem; }
     .slide-content h2 { font-size: 1.2rem; }
     .slide-content .hero-subtitle { font-size: 1rem; }
     .slide-content .hero-description { font-size: 0.95rem; }
