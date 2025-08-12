@@ -259,30 +259,36 @@
             </div>
             <div class="blog-grid">
                 <!-- Güncel Haberler -->
-                <div class="blog-card">
-                    <img src="images/fedai-takim-lab.jpeg?v=20250809" alt="TEKNOFEST 2025 Hazırlıkları" class="blog-image">
+                <div class="blog-card" onclick="openNewsModal('news1')" style="cursor: pointer;">
+                    <img src="images/fedai-takim-lab.jpeg?v=20250809" alt="CNN Türk Haberi" class="blog-image">
                     <div class="blog-content">
-                        <div class="blog-date">15 Ağustos 2025</div>
-                        <h3 class="blog-title">TEKNOFEST 2025 Final Aşamasına Geçtik!</h3>
-                        <p class="blog-excerpt">Fedai Takımı olarak TEKNOFEST 2025 İHA yarışmasında ön elemeleri başarıyla geçerek final aşamasına yükseldik. 8 farklı projemizle yarışmaya katılıyoruz.</p>
+                        <div class="blog-date">29 Haziran 2025</div>
+                        <h3 class="blog-title">CNN Türk'te TUNA-1 İHA Projemiz!</h3>
+                        <p class="blog-excerpt">Doğal afetlerde hayat kurtaracak TUNA-1 İHA projemiz CNN Türk'te yayınlandı. Afet bölgelerinde arama-kurtarma koordinasyonunu hızlandıracak yerli teknolojimiz.</p>
                         <div class="blog-tags">
-                            <span class="blog-tag">TEKNOFEST</span>
-                            <span class="blog-tag">Başarı</span>
-                            <span class="blog-tag">Final</span>
+                            <span class="blog-tag">CNN Türk</span>
+                            <span class="blog-tag">TUNA-1</span>
+                            <span class="blog-tag">Medya</span>
+                        </div>
+                        <div class="blog-read-more">
+                            <span>Detayları Oku <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
                 
-                <div class="blog-card">
-                    <img src="images/fedai-iha-model-sergisi.png?v=20250808" alt="Teknoloji Transferi" class="blog-image">
+                <div class="blog-card" onclick="openNewsModal('news2')" style="cursor: pointer;">
+                    <img src="images/fedai-iha-model-sergisi.png?v=20250808" alt="Taka Gazete Haberi" class="blog-image">
                     <div class="blog-content">
-                        <div class="blog-date">10 Ağustos 2025</div>
-                        <h3 class="blog-title">Yeni İHA Modelimiz Tanıtıldı</h3>
-                        <p class="blog-excerpt">Geliştirdiğimiz yeni İHA modelimizi üniversitemizde düzenlenen teknoloji transferi etkinliğinde tanıttık. Akademisyenler ve öğrencilerden büyük ilgi gördü.</p>
+                        <div class="blog-date">29 Haziran 2025</div>
+                        <h3 class="blog-title">Taka Gazete'de TUNA-1 İHA Projemiz!</h3>
+                        <p class="blog-excerpt">Rize'den Türkiye'ye yerli teknoloji hamlesi! TUNA-1 İHA projemiz Taka Gazete'de geniş yer buldu. Afetlerde hayat kurtaracak projemiz büyük ilgi gördü.</p>
                         <div class="blog-tags">
-                            <span class="blog-tag">Yeni Model</span>
-                            <span class="blog-tag">Tanıtım</span>
-                            <span class="blog-tag">Teknoloji</span>
+                            <span class="blog-tag">Taka Gazete</span>
+                            <span class="blog-tag">TUNA-1</span>
+                            <span class="blog-tag">Yerli Teknoloji</span>
+                        </div>
+                        <div class="blog-read-more">
+                            <span>Detayları Oku <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
@@ -437,6 +443,18 @@
             </div>
         </div>
     </section>
+
+    <!-- News Modals -->
+    <div id="newsModal" class="news-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeNewsModal()">&times;</span>
+            <div class="modal-body">
+                <div id="newsContent">
+                    <!-- News content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
 
     </main>
     <!-- Footer -->
