@@ -512,21 +512,42 @@ function openNewsModal() {
     
     const newsContent = `
         <div class="news-header">
-            <h2>TUNA-1 İHA'mız Haberlerde!</h2>
+            <h2>Doğal afetlere "Tuna-1" desteği</h2>
             <div class="news-meta">
-                <span class="news-date">29 Haziran 2025</span>
-                <span class="news-source">CNN Türk & Taka Gazete</span>
+                <span class="news-date">30 Haziran 2025</span>
+                <span class="news-source">CNN Türk</span>
             </div>
         </div>
         
         <div class="news-hero-image">
-            <img src="images/fedai-takim-lab.jpeg?v=20250809" alt="TUNA-1 İHA Projesi" class="news-main-image">
-            <div class="news-image-caption">TUNA-1 İHA projemiz Milli Teknoloji Atölyesi'nde geliştiriliyor</div>
+            <img src="images/cnn-turk-haber/tuna-1-cnn-turk.jpg" alt="TUNA-1 İHA CNN Türk Haberi" class="news-main-image">
+            <div class="news-image-caption">TUNA-1 İHA projemiz CNN Türk'te yayınlandı</div>
         </div>
         
         <div class="news-body">
             <div class="news-intro">
-                <p class="news-lead">Doğal afetlerde hayat kurtaracak devrim niteliğinde bir projeye imza attık! TUNA-1 İHA projemiz CNN Türk ve Taka Gazete'de geniş yer buldu. Afet bölgelerinde arama-kurtarma koordinasyonunu hızlandıracak yerli teknolojimiz büyük ilgi gördü.</p>
+                <p class="news-lead">Recep Tayyip Erdoğan Üniversitesi öğrencileri, danışman hocalarıyla birlikte doğal afetlerde kriz yönetimine destek olacak yeni bir insansız hava aracı geliştirdi. Arama-kurtarma çalışmalarını havadan desteklemeyi amaçlayan projenin detayları haberimizde.</p>
+            </div>
+            
+            <div class="news-content-section">
+                <h3>📰 Haber Detayları</h3>
+                <p>Üniversiteli gençlerin hocalarıyla beraber geliştirdiği yerli İHA, kriz anlarında hayat kurtarmaya aday. Recep Tayyip Erdoğan Üniversitesi öğrencileri, doğal afetlerde arama kurtarma ekiplerine yön verecek bir insansız hava aracı geliştirdi. Tuna-1 isimli İHA, sensörleri ve kameralarıyla ekiplerin yönünü belirliyor. Depremde yıkılan yapıları haritalayabiliyor. Afet bölgesinde zamanla yarışan kurtarma ekipleri için hava desteği sağlıyor.</p>
+                
+                <div class="news-quote">
+                    <blockquote>
+                        "Öncelikle dikey iniş kalkış yapan, özgün tasarımlı ve özgün yazılıma sahip bir ürün olarak üretildi. Bu ürünle biz afet yönetimindeki koordinasyon noktasında birçok koordinasyonun bir arada sağlanmasını amaçlayan bir hedefe ulaşmaya çalışıyoruz."
+                        <cite>- Doç. Dr. Murat Tören</cite>
+                    </blockquote>
+                </div>
+                
+                <p>Depremlerde yıkılan binaları sınıflandıran İHA, aynı zamanda sahadaki resmi kurumları ve müdahale araçlarını da tespit edebiliyor. Veri analizleriyle ekipleri yönlendirmek için anlık bilgi sağlıyor.</p>
+                
+                <div class="news-quote">
+                    <blockquote>
+                        "Üç farklı sınıflandırmayla beraber bütün eksiklerimizi hızlı bir şekilde tespit edip, hızlı bir şekilde aksiyon alarak hızlı ve verimli bir sonuç almayı amaçlıyoruz."
+                        <cite>- Doç. Dr. Murat Tören</cite>
+                    </blockquote>
+                </div>
             </div>
             
             <div class="news-highlights">
@@ -565,20 +586,6 @@ function openNewsModal() {
                 </div>
             </div>
             
-            <div class="news-content-section">
-                <h3>📰 Haber Detayları</h3>
-                <p>Recep Tayyip Erdoğan Üniversitesi Elektrik-Elektronik Mühendisliği öğrencileri <strong>Kadir Kurtuluş</strong>, <strong>Beyzanur Yavuz</strong> ve <strong>Burak Alkan</strong>, danışmanları <strong>Doç. Dr. Murat Tören</strong> ile birlikte geliştirdikleri TUNA-1 İHA ile deprem başta olmak üzere doğal afetlerde arama-kurtarma ekiplerinin koordinasyonunu hızlandırmayı hedefliyor.</p>
-                
-                <div class="news-quote">
-                    <blockquote>
-                        "Bu İHA'mız özgün tasarıma sahip ve tamamen yerli yazılımla geliştirildi. Amacımız, afet bölgelerinde hızlı koordinasyon kurularak kayıpların en aza indirilmesi."
-                        <cite>- Doç. Dr. Murat Tören</cite>
-                    </blockquote>
-                </div>
-                
-                <p>Üniversitenin Milli Teknoloji Atölyesi'nde üretilen TUNA-1, hafifletilmiş 3D baskı malzemesi ile üretilen İHA, gelişmiş sensörleri ve kameraları sayesinde ekiplerin yönlendirilmesinde kritik rol üstlenecek.</p>
-            </div>
-            
             <div class="news-achievements">
                 <h3>🏆 Başarılarımız</h3>
                 <div class="achievement-item">
@@ -599,18 +606,18 @@ function openNewsModal() {
             
             <div class="news-links">
                 <div class="news-video">
-                    <h4>📺 CNN Türk Haberi</h4>
-                    <p>TUNA-1 İHA projemiz CNN Türk'te detaylı olarak ele alındı.</p>
-                    <a href="https://www.cnnturk.com/video/turkiye/dogal-afetlere-tuna-1-destegi-2304034" target="_blank" class="btn btn-primary">
+                    <h4>📺 CNN Türk Haberi (Kısa Versiyon)</h4>
+                    <p>TUNA-1 İHA projemiz CNN Türk'te detaylı olarak ele alındı. Doğal afetlerde kriz yönetimine destek olacak yerli İHA teknolojimiz.</p>
+                    <a href="https://www.cnnturk.com/video/turkiye/dogal-afetlere-tuna-1-destegi-2304034?dmplayersource=share-send" target="_blank" class="btn btn-primary">
                         <i class="fas fa-play"></i> Haberi İzle
                     </a>
                 </div>
                 
-                <div class="news-link">
-                    <h4>📰 Taka Gazete Haberi</h4>
-                    <p>Rize'den Türkiye'ye yerli teknoloji hamlesi Taka Gazete'de geniş yer buldu.</p>
-                    <a href="https://www.takagazete.com.tr/foto-galeri/afetlerde-hayat-kurtaracak-rizeden-turkiyeye-tuna-1-iha-surprizi" target="_blank" class="btn btn-primary">
-                        <i class="fas fa-external-link-alt"></i> Haberi Oku
+                <div class="news-video">
+                    <h4>📺 Taka Gazete Video Haberi</h4>
+                    <p>Rize'den Türkiye'ye yerli teknoloji hamlesi Taka Gazete'de video haberi olarak yayınlandı.</p>
+                    <a href="https://takagazetecomtr.tevideo.org/takagazete-com-tr/uploads/2025/06/rize-iha-1-1.mp4" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-play"></i> Video Haberi İzle
                     </a>
                 </div>
             </div>
