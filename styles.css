@@ -2916,19 +2916,22 @@ td {
 }
 
 .blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
     margin-top: 3rem;
 }
 
 .blog-card {
+    max-width: 500px;
+    width: 100%;
     background: white;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
+
+
 
 .blog-card:hover {
     transform: translateY(-5px);
