@@ -1028,13 +1028,25 @@ body {
     line-height: 1.6;
 }
 
+.news-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
 .news-video,
 .news-link {
-    margin: 2rem 0;
     padding: 1.5rem;
     background: #f8fafc;
     border-radius: 12px;
     border-left: 4px solid #2563eb;
+}
+
+@media (max-width: 768px) {
+    .news-links {
+        grid-template-columns: 1fr;
+    }
 }
 
 .news-video h4,

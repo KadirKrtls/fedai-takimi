@@ -506,90 +506,57 @@ style.textContent = `
 document.head.appendChild(style);
 
 // News Modal Functions
-function openNewsModal(newsId) {
+function openNewsModal() {
     const modal = document.getElementById('newsModal');
     const content = document.getElementById('newsContent');
     
-    const newsData = {
-        news1: {
-            title: "CNN Türk'te TUNA-1 İHA Projemiz!",
-            date: "29 Haziran 2025",
-            source: "CNN Türk",
-            content: `
-                <div class="news-header">
-                    <h2>CNN Türk'te TUNA-1 İHA Projemiz!</h2>
-                    <div class="news-meta">
-                        <span class="news-date">29 Haziran 2025</span>
-                        <span class="news-source">CNN Türk</span>
-                    </div>
+    const newsContent = `
+        <div class="news-header">
+            <h2>TUNA-1 İHA'mız Haberlerde!</h2>
+            <div class="news-meta">
+                <span class="news-date">29 Haziran 2025</span>
+                <span class="news-source">CNN Türk & Taka Gazete</span>
+            </div>
+        </div>
+        <div class="news-body">
+            <p>Doğal afetlerde hayat kurtaracak TUNA-1 İHA projemiz CNN Türk ve Taka Gazete'de yayınlandı. Afet bölgelerinde arama-kurtarma koordinasyonunu hızlandıracak yerli teknolojimiz büyük ilgi gördü.</p>
+            
+            <h3>TUNA-1'in Öne Çıkan Özellikleri:</h3>
+            <ul>
+                <li>Dikey kalkış yapabilen özgün tasarım</li>
+                <li>Tamamen yerli yazılım ile geliştirildi</li>
+                <li>Pist veya rampa gerektirmeden kalkış</li>
+                <li>Hafifletilmiş 3D baskı malzemesi</li>
+                <li>Gelişmiş sensörler ve kameralar</li>
+                <li>Yıkılan binaların tespiti ve haritalandırma</li>
+                <li>Üç farklı sınıflandırma sistemi</li>
+            </ul>
+            
+            <p>Recep Tayyip Erdoğan Üniversitesi Elektrik-Elektronik Mühendisliği öğrencileri Kadir Kurtuluş, Beyzanur Yavuz ve Burak Alkan, danışmanları Doç. Dr. Murat Tören ile birlikte geliştirdikleri TUNA-1 İHA ile deprem başta olmak üzere doğal afetlerde arama-kurtarma ekiplerinin koordinasyonunu hızlandırmayı hedefliyor.</p>
+            
+            <p>TUNA-1, dünyanın en büyük havacılık ve teknoloji festivali TEKNOFEST'te "İnsanlık yararına teknoloji" kategorisinde finale yükselerek TÜBİTAK desteği kazandı.</p>
+            
+            <div class="news-links">
+                <div class="news-video">
+                    <h4>CNN Türk Haberi:</h4>
+                    <a href="https://www.cnnturk.com/video/turkiye/dogal-afetlere-tuna-1-destegi-2304034" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-play"></i> Haberi İzle
+                    </a>
                 </div>
-                <div class="news-body">
-                    <p>Doğal afetlerde hayat kurtaracak TUNA-1 İHA projemiz CNN Türk'te yayınlandı. Afet bölgelerinde arama-kurtarma koordinasyonunu hızlandıracak yerli teknolojimiz büyük ilgi gördü.</p>
-                    
-                    <h3>Projenin Öne Çıkan Özellikleri:</h3>
-                    <ul>
-                        <li>Dikey kalkış yapabilen özgün tasarım</li>
-                        <li>Tamamen yerli yazılım ile geliştirildi</li>
-                        <li>Afet bölgelerinde hızlı koordinasyon</li>
-                        <li>Yıkılan binaların tespiti ve haritalandırma</li>
-                        <li>Üç farklı sınıflandırma sistemi</li>
-                    </ul>
-                    
-                    <p>Recep Tayyip Erdoğan Üniversitesi Elektrik-Elektronik Mühendisliği öğrencileri Kadir Kurtuluş, Beyzanur Yavuz ve Burak Alkan, danışmanları Doç. Dr. Murat Tören ile birlikte geliştirdikleri TUNA-1 İHA ile deprem başta olmak üzere doğal afetlerde arama-kurtarma ekiplerinin koordinasyonunu hızlandırmayı hedefliyor.</p>
-                    
-                    <div class="news-video">
-                        <h4>CNN Türk Haberi:</h4>
-                        <a href="https://www.cnnturk.com/video/turkiye/dogal-afetlere-tuna-1-destegi-2304034" target="_blank" class="btn btn-primary">
-                            <i class="fas fa-play"></i> Haberi İzle
-                        </a>
-                    </div>
+                
+                <div class="news-link">
+                    <h4>Taka Gazete Haberi:</h4>
+                    <a href="https://www.takagazete.com.tr/foto-galeri/afetlerde-hayat-kurtaracak-rizeden-turkiyeye-tuna-1-iha-surprizi" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-external-link-alt"></i> Haberi Oku
+                    </a>
                 </div>
-            `
-        },
-        news2: {
-            title: "Taka Gazete'de TUNA-1 İHA Projemiz!",
-            date: "29 Haziran 2025",
-            source: "Taka Gazete",
-            content: `
-                <div class="news-header">
-                    <h2>Taka Gazete'de TUNA-1 İHA Projemiz!</h2>
-                    <div class="news-meta">
-                        <span class="news-date">29 Haziran 2025</span>
-                        <span class="news-source">Taka Gazete</span>
-                    </div>
-                </div>
-                <div class="news-body">
-                    <p>Rize'den Türkiye'ye yerli teknoloji hamlesi! TUNA-1 İHA projemiz Taka Gazete'de geniş yer buldu. Afetlerde hayat kurtaracak projemiz büyük ilgi gördü.</p>
-                    
-                    <h3>TUNA-1'in Öne Çıkan Özellikleri:</h3>
-                    <ul>
-                        <li>Pist veya rampa gerektirmeden dikey kalkış</li>
-                        <li>Hafifletilmiş 3D baskı malzemesi</li>
-                        <li>Gelişmiş sensörler ve kameralar</li>
-                        <li>Anında haritalandırma verileri</li>
-                        <li>Yıkılan yapıların tespiti</li>
-                    </ul>
-                    
-                    <p>Üniversitenin Milli Teknoloji Atölyesi'nde üretilen TUNA-1, pist veya rampa gerektirmeden dikey kalkış yapabiliyor. Hafifletilmiş 3D baskı malzemesi ile üretilen İHA, gelişmiş sensörleri ve kameraları sayesinde ekiplerin yönlendirilmesinde kritik rol üstlenecek.</p>
-                    
-                    <p>TUNA-1, dünyanın en büyük havacılık ve teknoloji festivali TEKNOFEST'te "İnsanlık yararına teknoloji" kategorisinde finale yükselerek TÜBİTAK desteği kazandı.</p>
-                    
-                    <div class="news-link">
-                        <h4>Taka Gazete Haberi:</h4>
-                        <a href="https://www.takagazete.com.tr/foto-galeri/afetlerde-hayat-kurtaracak-rizeden-turkiyeye-tuna-1-iha-surprizi" target="_blank" class="btn btn-primary">
-                            <i class="fas fa-external-link-alt"></i> Haberi Oku
-                        </a>
-                    </div>
-                </div>
-            `
-        }
-    };
+            </div>
+        </div>
+    `;
     
-    if (newsData[newsId]) {
-        content.innerHTML = newsData[newsId].content;
-        modal.style.display = 'block';
-        document.body.style.overflow = 'hidden';
-    }
+    content.innerHTML = newsContent;
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
 }
 
 function closeNewsModal() {
