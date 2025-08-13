@@ -623,24 +623,24 @@ function openNewsModal() {
             <h2>Haber Görselleri</h2>
             <div class="gallery-grid">
                 <div class="gallery-item" onclick="openGalleryImage(this)">
-                    <img src="images/cnn-turk-haber/rize-iha-2.png.webp" alt="TUNA-1 İHA Geliştirme Süreci" class="gallery-image">
-                    <div class="gallery-caption">TUNA-1 İHA'nın geliştirilme süreci</div>
+                    <img src="images/cnn-turk-haber/rize-iha-2.png.webp" alt="Proje Çalışmaları" class="gallery-image">
+                    <div class="gallery-caption">Proje Çalışmaları</div>
                 </div>
                 <div class="gallery-item" onclick="openGalleryImage(this)">
-                    <img src="images/cnn-turk-haber/rize-iha-3.png.webp" alt="İHA'nın Teknik Özellikleri" class="gallery-image">
-                    <div class="gallery-caption">İHA'nın teknik özellikleri</div>
+                    <img src="images/cnn-turk-haber/rize-iha-3.png.webp" alt="Atölye Ortamı" class="gallery-image">
+                    <div class="gallery-caption">Atölye Ortamı</div>
                 </div>
                 <div class="gallery-item" onclick="openGalleryImage(this)">
-                    <img src="images/cnn-turk-haber/rize-iha-7.png.webp" alt="Takım Üyelerimizle Birlikte" class="gallery-image">
-                    <div class="gallery-caption">Takım üyelerimizle birlikte</div>
+                    <img src="images/cnn-turk-haber/rize-iha-7.png.webp" alt="Ekip ve İşbirliği" class="gallery-image">
+                    <div class="gallery-caption">Ekip ve İşbirliği</div>
                 </div>
                 <div class="gallery-item" onclick="openGalleryImage(this)">
-                    <img src="images/cnn-turk-haber/rize-iha-8.png.webp" alt="Laboratuvar Çalışmaları" class="gallery-image">
-                    <div class="gallery-caption">Laboratuvar çalışmaları</div>
+                    <img src="images/cnn-turk-haber/rize-iha-8.png.webp" alt="Teknik Geliştirme" class="gallery-image">
+                    <div class="gallery-caption">Teknik Geliştirme</div>
                 </div>
                 <div class="gallery-item" onclick="openGalleryImage(this)">
-                    <img src="images/cnn-turk-haber/rize-iha-9.png.webp" alt="İHA'nın Uçuş Testleri" class="gallery-image">
-                    <div class="gallery-caption">İHA'nın uçuş testleri</div>
+                    <img src="images/cnn-turk-haber/rize-iha-9.png.webp" alt="Araç ve Ekipmanlar" class="gallery-image">
+                    <div class="gallery-caption">Araç ve Ekipmanlar</div>
                 </div>
             </div>
         </div>
