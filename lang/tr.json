@@ -91,12 +91,16 @@
     },
     "values": {
       "title": "Değerlerimiz",
-      "item1": "Yenilikçilik ve sürekli gelişim",
-      "item2": "Takım çalışması ve dayanışma",
-      "item3": "Kalite ve mükemmellik arayışı",
-      "item4": "Ulusal teknoloji geliştirme sorumluluğu",
-      "item5": "Etik değerler ve şeffaflık",
-      "item6": "Sosyal sorumluluk bilinci"
+      "item1": "Yenilikçilik",
+      "item1.desc": "Sürekli öğrenerek ve araştırarak yeni fikirleri hayata geçiririz.",
+      "item2": "Takım Ruhu",
+      "item2.desc": "Farklı alanlardaki yeteneklerimizi ortak bir hedef için birleştiririz.",
+      "item3": "Mükemmeliyet",
+      "item3.desc": "Her projede en yüksek kaliteyi hedefleriz.",
+      "item4": "Milli Sorumluluk",
+      "item4.desc": "Ülkemizin teknoloji alanındaki gücüne katkı sağlamak en öncelikli görevimizdir.",
+      "item5": "Sürdürülebilirlik",
+      "item5.desc": "Çözümlerimizi gelecek nesillere değer katacak şekilde tasarlarız."
     }
   },
   "projects": {

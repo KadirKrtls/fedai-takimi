@@ -91,12 +91,16 @@
     },
     "values": {
       "title": "Our Values",
-      "item1": "Innovation and continuous development",
-      "item2": "Teamwork and solidarity",
-      "item3": "Quest for quality and excellence",
-      "item4": "Responsibility for national technology development",
-      "item5": "Ethical values and transparency",
-      "item6": "Social responsibility awareness"
+      "item1": "Innovation",
+      "item1.desc": "We bring new ideas to life by continuously learning and researching.",
+      "item2": "Team Spirit",
+      "item2.desc": "We unite our talents from different fields for a common goal.",
+      "item3": "Excellence",
+      "item3.desc": "We aim for the highest quality in every project.",
+      "item4": "National Responsibility",
+      "item4.desc": "Contributing to our country's power in the field of technology is our top priority.",
+      "item5": "Sustainability",
+      "item5.desc": "We design our solutions to add value to future generations."
     }
   },
   "projects": {
