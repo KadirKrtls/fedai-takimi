@@ -112,6 +112,7 @@ body {
     background: #333;
     margin: 3px 0;
     transition: 0.3s;
+    border-radius: 2px;
 }
 
 /* Page Header */
@@ -1900,7 +1901,13 @@ td {
 /* Tablet ve altı: 992px altında hamburger */
 @media (max-width: 992px) {
     /* Navbar mobil: hamburger + açılır menü */
-    .nav-container { flex-wrap: nowrap; height: 60px; padding-top: 0; padding-bottom: 0; }
+    .nav-container { 
+        flex-wrap: nowrap; 
+        height: 60px; 
+        padding-top: 0; 
+        padding-bottom: 0; 
+        position: relative;
+    }
 
     .nav-menu {
         position: fixed;
@@ -1915,13 +1922,41 @@ td {
         padding: 1rem 0;
         gap: 0.25rem;
         z-index: 1001;
+        height: auto;
+        max-height: calc(100vh - 60px);
+        overflow-y: auto;
     }
 
-    .nav-menu.active { left: 0; }
+    .nav-menu.active { 
+        left: 0; 
+        display: flex !important;
+    }
 
-    .hamburger { display: block !important; }
-    .nav-link { font-size: 1rem; white-space: nowrap; padding: 0.75rem 1rem; }
+    .hamburger { 
+        display: flex !important; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 1002;
+    }
+    
+    .nav-link { 
+        font-size: 1rem; 
+        white-space: nowrap; 
+        padding: 0.75rem 1rem; 
+        border-bottom: 1px solid #f3f4f6;
+        width: 100%;
+        text-align: center;
+    }
+    
     .nav-link::after { display: none; }
+    
+    .nav-link:hover {
+        background-color: #f9fafb;
+    }
 
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
@@ -2094,7 +2129,28 @@ td {
 /* 640px altında da hamburger menü kullanılsın (daha derli toplu) */
 @media (max-width: 640px) {
     .nav-container { height: 56px; }
-    .hamburger { display: block !important; }
+    .hamburger { 
+        display: flex !important; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 1002;
+    }
+    
+    .nav-menu {
+        top: 56px;
+        background: #ffffff;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.15);
+    }
+    
+    .nav-link {
+        padding: 1rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
     .nav-menu { position: fixed; left: -100%; top: 56px; }
     .nav-menu.active { left: 0; }
     .language-btn { padding: 4px 8px; font-size: .85rem; }

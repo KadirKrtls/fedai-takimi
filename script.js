@@ -11,9 +11,17 @@ if (hamburger && navMenu) {
         const isOpen = navMenu.classList.toggle('active');
         hamburger.classList.toggle('active', isOpen);
         hamburger.setAttribute('aria-expanded', String(isOpen));
+        
+        // Debug için console log
+        console.log('Menu toggled:', isOpen ? 'opened' : 'closed');
     };
 
-    hamburger.addEventListener('click', toggleMenu);
+    hamburger.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleMenu();
+    });
+    
     hamburger.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
@@ -27,6 +35,15 @@ if (hamburger && navMenu) {
         navMenu.classList.remove('active');
         hamburger.setAttribute('aria-expanded', 'false');
     }));
+    
+    // Close on outside click
+    document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+        }
+    });
 }
 
 // Set active navigation link based on current page
