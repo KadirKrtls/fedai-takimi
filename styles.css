@@ -3259,6 +3259,14 @@ td {
     margin-top: 3rem;
 }
 
+.news-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    max-width: 500px;
+    width: 100%;
+}
+
 .news-card {
     max-width: 500px;
     width: 100%;
