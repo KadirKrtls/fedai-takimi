@@ -540,161 +540,171 @@ function openNewsModal() {
     const content = document.getElementById('newsContent');
     
     const newsContent = `
+        <!-- Başlık + Meta Satırı -->
         <div class="news-header">
-            <h2>Doğal afetlere "Tuna-1" desteği</h2>
+            <h1 class="news-title">Doğal afetlere "Tuna-1" desteği</h1>
             <div class="news-meta">
-                <span class="news-date">30 Haziran 2025</span>
-                <span class="news-source">CNN Türk</span>
+                <span class="news-date"><i class="fas fa-calendar"></i> 30 Haziran 2025</span>
+                <span class="news-source"><i class="fas fa-newspaper"></i> CNN Türk</span>
+                <span class="news-badge">HABER</span>
             </div>
         </div>
         
-        <div class="news-hero-image">
-            <img src="images/cnn-turk-haber/rize-iha-3.png.webp" alt="TUNA-1 İHA CNN Türk Haberi" class="news-main-image">
-            <div class="news-image-caption">TUNA-1 İHA projemiz CNN Türk'te yayınlandı</div>
+        <!-- Kısa Özet -->
+        <div class="news-summary">
+            <p class="news-lead">Recep Tayyip Erdoğan Üniversitesi öğrencileri, danışman hocalarıyla birlikte doğal afetlerde kriz yönetimine destek olacak yeni bir insansız hava aracı geliştirdi. TUNA-1 İHA, arama-kurtarma çalışmalarını havadan desteklemeyi amaçlayan özgün tasarımı ve yerli yazılımı ile dikkat çekiyor.</p>
         </div>
         
-        <div class="news-body">
-            <div class="news-intro">
-                <p class="news-lead">Recep Tayyip Erdoğan Üniversitesi öğrencileri, danışman hocalarıyla birlikte doğal afetlerde kriz yönetimine destek olacak yeni bir insansız hava aracı geliştirdi. Arama-kurtarma çalışmalarını havadan desteklemeyi amaçlayan projenin detayları haberimizde.</p>
+        <!-- Ana Medya -->
+        <div class="news-hero-media">
+            <div class="hero-video-container">
+                <iframe 
+                    src="https://geo.dailymotion.com/player/x9ooc.html?video=x9m2z16&customConfig%5Bdynamiciu%5D=%2F9927946%2C22420855682%2Fcnnturk%2Fsitegeneli&customConfig%5Bkeyvalues%5D=cnnturk_kategori%3Dturkiye%2Cpre%26contentID%3D6861a7103129374d52b1e1ef%2Ccnn_contentid%3D6861a7103129374d52b1e1ef%26vid%3D6861a7103129374d52b1e1ef&customConfig%5Botherparams%5D=pmnd%3D0%26pmxd%3D600000%26pmad%3D1&customConfig%5BcustomParams%5D=pmnd%3D0%26pmxd%3D600000%26pmad%3D1&customConfig%5Bpremium%5D=false&customConfig%5Bplcmt%5D=2&customConfig%5Bvpmute%5D=undefined&mute=true&loop=false" 
+                    frameborder="0" 
+                    allowfullscreen
+                    class="hero-video">
+                </iframe>
             </div>
-            
-            <div class="news-content-section">
-                <h3>📰 Haber Detayları</h3>
-                <p>Üniversiteli gençlerin hocalarıyla beraber geliştirdiği yerli İHA, kriz anlarında hayat kurtarmaya aday. Recep Tayyip Erdoğan Üniversitesi öğrencileri, doğal afetlerde arama kurtarma ekiplerine yön verecek bir insansız hava aracı geliştirdi. Tuna-1 isimli İHA, sensörleri ve kameralarıyla ekiplerin yönünü belirliyor. Depremde yıkılan yapıları haritalayabiliyor. Afet bölgesinde zamanla yarışan kurtarma ekipleri için hava desteği sağlıyor.</p>
-                
-                <div class="news-quote">
-                    <blockquote>
-                        "Öncelikle dikey iniş kalkış yapan, özgün tasarımlı ve özgün yazılıma sahip bir ürün olarak üretildi. Bu ürünle biz afet yönetimindeki koordinasyon noktasında birçok koordinasyonun bir arada sağlanmasını amaçlayan bir hedefe ulaşmaya çalışıyoruz."
-                        <cite>- Doç. Dr. Murat Tören</cite>
-                    </blockquote>
+        </div>
+        
+        <!-- Öne Çıkan 4 Özellik -->
+        <div class="news-features">
+            <h2>TUNA-1'in Öne Çıkan Özellikleri</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Dikey Kalkış</h3>
+                    <p>Pist veya rampa gerektirmeden dikey kalkış yapabilen özgün tasarım</p>
                 </div>
-                
-                <p>Depremlerde yıkılan binaları sınıflandıran İHA, aynı zamanda sahadaki resmi kurumları ve müdahale araçlarını da tespit edebiliyor. Veri analizleriyle ekipleri yönlendirmek için anlık bilgi sağlıyor.</p>
-                
-                <div class="news-quote">
-                    <blockquote>
-                        "Üç farklı sınıflandırmayla beraber bütün eksiklerimizi hızlı bir şekilde tespit edip, hızlı bir şekilde aksiyon alarak hızlı ve verimli bir sonuç almayı amaçlıyoruz."
-                        <cite>- Doç. Dr. Murat Tören</cite>
-                    </blockquote>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Yerli Yazılım</h3>
+                    <p>Tamamen yerli yazılım ile geliştirildi, güvenli ve özelleştirilebilir</p>
                 </div>
-            </div>
-            
-            <div class="news-highlights">
-                <h3>🚀 TUNA-1'in Öne Çıkan Özellikleri</h3>
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <div class="feature-icon">🛫</div>
-                        <h4>Dikey Kalkış</h4>
-                        <p>Pist veya rampa gerektirmeden dikey kalkış yapabilen özgün tasarım</p>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
                     </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">💻</div>
-                        <h4>Yerli Yazılım</h4>
-                        <p>Tamamen yerli yazılım ile geliştirildi, güvenli ve özelleştirilebilir</p>
+                    <h3>Gelişmiş Sensörler</h3>
+                    <p>Yüksek çözünürlüklü kameralar ve gelişmiş sensör sistemleri</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map"></i>
                     </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">🔍</div>
-                        <h4>Gelişmiş Sensörler</h4>
-                        <p>Yüksek çözünürlüklü kameralar ve gelişmiş sensör sistemleri</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">🗺️</div>
-                        <h4>Haritalandırma</h4>
-                        <p>Yıkılan binaların tespiti ve anında haritalandırma verileri</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">🤖</div>
-                        <h4>Yapay Zeka</h4>
-                        <p>Üç farklı sınıflandırma sistemi ile akıllı tespit</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">⚡</div>
-                        <h4>Hızlı Müdahale</h4>
-                        <p>Afet bölgelerinde hızlı koordinasyon ve müdahale imkanı</p>
-                    </div>
+                    <h3>Akıllı Haritalandırma</h3>
+                    <p>Yıkılan binaların tespiti ve anında haritalandırma verileri</p>
                 </div>
             </div>
+        </div>
+        
+        <!-- Haber İçeriği -->
+        <div class="news-content">
+            <h2>Haber Detayları</h2>
+            <p>Üniversiteli gençlerin hocalarıyla beraber geliştirdiği yerli İHA, kriz anlarında hayat kurtarmaya aday. Recep Tayyip Erdoğan Üniversitesi öğrencileri, doğal afetlerde arama kurtarma ekiplerine yön verecek bir insansız hava aracı geliştirdi. Tuna-1 isimli İHA, sensörleri ve kameralarıyla ekiplerin yönünü belirliyor. Depremde yıkılan yapıları haritalayabiliyor. Afet bölgesinde zamanla yarışan kurtarma ekipleri için hava desteği sağlıyor.</p>
             
-            <div class="news-gallery">
-                <h3>📸 CNN Türk Haber Görselleri</h3>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="images/cnn-turk-haber/rize-iha-2.png.webp" alt="TUNA-1 İHA CNN Türk Haberi 1" class="gallery-image">
-                        <div class="gallery-caption">TUNA-1 İHA'nın geliştirilme süreci</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/cnn-turk-haber/rize-iha-3.png.webp" alt="TUNA-1 İHA CNN Türk Haberi 2" class="gallery-image">
-                        <div class="gallery-caption">İHA'nın teknik özellikleri</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/cnn-turk-haber/rize-iha-7.png.webp" alt="TUNA-1 İHA CNN Türk Haberi 3" class="gallery-image">
-                        <div class="gallery-caption">Takım üyelerimizle birlikte</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/cnn-turk-haber/rize-iha-8.png.webp" alt="TUNA-1 İHA CNN Türk Haberi 4" class="gallery-image">
-                        <div class="gallery-caption">Laboratuvar çalışmaları</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/cnn-turk-haber/rize-iha-9.png.webp" alt="TUNA-1 İHA CNN Türk Haberi 5" class="gallery-image">
-                        <div class="gallery-caption">İHA'nın uçuş testleri</div>
-                    </div>
+            <p>Depremlerde yıkılan binaları sınıflandıran İHA, aynı zamanda sahadaki resmi kurumları ve müdahale araçlarını da tespit edebiliyor. Veri analizleriyle ekipleri yönlendirmek için anlık bilgi sağlıyor. Üç farklı sınıflandırma sistemi ile akıllı tespit yaparak, afet yönetimindeki koordinasyon noktasında birçok koordinasyonun bir arada sağlanmasını amaçlıyor.</p>
+        </div>
+        
+        <!-- Alıntı -->
+        <div class="news-quote">
+            <blockquote>
+                <p>"Öncelikle dikey iniş kalkış yapan, özgün tasarımlı ve özgün yazılıma sahip bir ürün olarak üretildi. Bu ürünle biz afet yönetimindeki koordinasyon noktasında birçok koordinasyonun bir arada sağlanmasını amaçlayan bir hedefe ulaşmaya çalışıyoruz."</p>
+                <cite>— Doç. Dr. Murat Tören, Proje Danışmanı</cite>
+            </blockquote>
+        </div>
+        
+        <!-- Görsel Galeri -->
+        <div class="news-gallery">
+            <h2>Haber Görselleri</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openGalleryImage(this)">
+                    <img src="images/cnn-turk-haber/rize-iha-2.png.webp" alt="TUNA-1 İHA Geliştirme Süreci" class="gallery-image">
+                    <div class="gallery-caption">TUNA-1 İHA'nın geliştirilme süreci</div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryImage(this)">
+                    <img src="images/cnn-turk-haber/rize-iha-3.png.webp" alt="İHA'nın Teknik Özellikleri" class="gallery-image">
+                    <div class="gallery-caption">İHA'nın teknik özellikleri</div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryImage(this)">
+                    <img src="images/cnn-turk-haber/rize-iha-7.png.webp" alt="Takım Üyelerimizle Birlikte" class="gallery-image">
+                    <div class="gallery-caption">Takım üyelerimizle birlikte</div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryImage(this)">
+                    <img src="images/cnn-turk-haber/rize-iha-8.png.webp" alt="Laboratuvar Çalışmaları" class="gallery-image">
+                    <div class="gallery-caption">Laboratuvar çalışmaları</div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryImage(this)">
+                    <img src="images/cnn-turk-haber/rize-iha-9.png.webp" alt="İHA'nın Uçuş Testleri" class="gallery-image">
+                    <div class="gallery-caption">İHA'nın uçuş testleri</div>
                 </div>
             </div>
-            
-            <div class="news-achievements">
-                <h3>🏆 Başarılarımız</h3>
-                <div class="achievement-item">
-                    <div class="achievement-icon">🏅</div>
+        </div>
+        
+        <!-- Başarılar / Kanıtlar -->
+        <div class="news-achievements">
+            <h2>Başarılarımız ve Kanıtlar</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
                     <div class="achievement-content">
-                        <h4>TEKNOFEST Finalisti</h4>
+                        <h3>TEKNOFEST Finalisti</h3>
                         <p>Dünyanın en büyük havacılık ve teknoloji festivali TEKNOFEST'te "İnsanlık yararına teknoloji" kategorisinde finale yükseldik.</p>
                     </div>
                 </div>
-                <div class="achievement-item">
-                    <div class="achievement-icon">💰</div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
                     <div class="achievement-content">
-                        <h4>TÜBİTAK Desteği</h4>
+                        <h3>TÜBİTAK Desteği</h3>
                         <p>Projemiz TÜBİTAK tarafından desteklenmeye değer bulundu ve geliştirme sürecimiz hızlandı.</p>
                     </div>
                 </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Ulusal Tanınırlık</h3>
+                        <p>CNN Türk ve Taka Gazete gibi ulusal medya organlarında projemiz detaylı olarak ele alındı.</p>
+                    </div>
+                </div>
             </div>
-            
-            <div class="news-videos">
-                <h3>📺 Video Haberler</h3>
-                
-                <div class="video-section">
-                    <h4>CNN Türk Haberi</h4>
-                    <p>TUNA-1 İHA projemiz CNN Türk'te detaylı olarak ele alındı. Doğal afetlerde kriz yönetimine destek olacak yerli İHA teknolojimiz.</p>
-                    <div class="video-container">
-                        <iframe 
-                            src="https://geo.dailymotion.com/player/x9ooc.html?video=x9m2z16&customConfig%5Bdynamiciu%5D=%2F9927946%2C22420855682%2Fcnnturk%2Fsitegeneli&customConfig%5Bkeyvalues%5D=cnnturk_kategori%3Dturkiye%2Cpre%26contentID%3D6861a7103129374d52b1e1ef%2Ccnn_contentid%3D6861a7103129374d52b1e1ef%26vid%3D6861a7103129374d52b1e1ef&customConfig%5Botherparams%5D=pmnd%3D0%26pmxd%3D600000%26pmad%3D1&customConfig%5BcustomParams%5D=pmnd%3D0%26pmxd%3D600000%26pmad%3D1&customConfig%5Bpremium%5D=false&customConfig%5Bplcmt%5D=2&customConfig%5Bvpmute%5D=undefined&mute=true&loop=false" 
-                            frameborder="0" 
-                            allowfullscreen
-                            class="news-video-iframe">
-                        </iframe>
-                    </div>
-                    <div class="video-actions">
-                        <a href="https://geo.dailymotion.com/player/x9ooc.html?video=x9m2z16&customConfig%5Bdynamiciu%5D=%2F9927946%2C22420855682%2Fcnnturk%2Fsitegeneli&customConfig%5Bkeyvalues%5D=cnnturk_kategori%3Dturkiye%2Cpre%26contentID%3D6861a7103129374d52b1e1ef%2Ccnn_contentid%3D6861a7103129374d52b1e1ef%26vid%3D6861a7103129374d52b1e1ef&customConfig%5Botherparams%5D=pmnd%3D0%26pmxd%3D600000%26pmad%3D1&customConfig%5BcustomParams%5D=pmnd%3D0%26pmxd%3D600000%26pmad%3D1&customConfig%5Bpremium%5D=false&customConfig%5Bplcmt%5D=2&customConfig%5Bvpmute%5D=undefined&mute=true&loop=false" target="_blank" class="btn btn-outline">
-                            <i class="fas fa-external-link-alt"></i> CNN Türk'te Aç
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="video-section">
-                    <h4>Taka Gazete Video Haberi</h4>
-                    <p>Rize'den Türkiye'ye yerli teknoloji hamlesi Taka Gazete'de video haberi olarak yayınlandı.</p>
-                    <div class="video-container">
-                        <video controls class="news-video-player">
-                            <source src="https://takagazetecomtr.tevideo.org/takagazete-com-tr/uploads/2025/06/rize-iha-1-1.mp4" type="video/mp4">
-                            Tarayıcınız video oynatmayı desteklemiyor.
-                        </video>
-                    </div>
-                    <div class="video-actions">
-                        <a href="https://takagazetecomtr.tevideo.org/takagazete-com-tr/uploads/2025/06/rize-iha-1-1.mp4" target="_blank" class="btn btn-outline">
-                            <i class="fas fa-download"></i> Videoyu İndir
-                        </a>
-                    </div>
-                </div>
+        </div>
+        
+        <!-- Kaynak Bağlantıları -->
+        <div class="news-sources">
+            <h2>Kaynak Bağlantıları</h2>
+            <div class="sources-grid">
+                <a href="https://www.cnnturk.com/teknoloji/dogal-afetlere-tuna-1-destegi" target="_blank" class="source-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>CNN Türk Haberi</span>
+                </a>
+                <a href="https://takagazetecomtr.tevideo.org/takagazete-com-tr/uploads/2025/06/rize-iha-1-1.mp4" target="_blank" class="source-link">
+                    <i class="fas fa-video"></i>
+                    <span>Taka Gazete Videosu</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Önceki / Sonraki Haber Navigasyonu -->
+        <div class="news-navigation">
+            <div class="nav-buttons">
+                <button class="nav-btn prev-btn" onclick="showPreviousNews()">
+                    <i class="fas fa-chevron-left"></i>
+                    <span>Önceki Haber</span>
+                </button>
+                <button class="nav-btn next-btn" onclick="showNextNews()">
+                    <span>Sonraki Haber</span>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
         </div>
     `;
@@ -717,3 +727,42 @@ document.addEventListener('click', (e) => {
         closeNewsModal();
     }
 });
+
+// Gallery image functions
+function openGalleryImage(element) {
+    const img = element.querySelector('.gallery-image');
+    const caption = element.querySelector('.gallery-caption');
+    
+    // Create lightbox
+    const lightbox = document.createElement('div');
+    lightbox.className = 'gallery-lightbox';
+    lightbox.innerHTML = `
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img src="${img.src}" alt="${img.alt}" class="lightbox-image">
+            <div class="lightbox-caption">${caption.textContent}</div>
+        </div>
+    `;
+    
+    document.body.appendChild(lightbox);
+    document.body.style.overflow = 'hidden';
+    
+    // Close lightbox
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox || e.target.className === 'lightbox-close') {
+            document.body.removeChild(lightbox);
+            document.body.style.overflow = 'auto';
+        }
+    });
+}
+
+// Navigation functions
+function showPreviousNews() {
+    // TODO: Implement previous news navigation
+    console.log('Previous news');
+}
+
+function showNextNews() {
+    // TODO: Implement next news navigation
+    console.log('Next news');
+}
