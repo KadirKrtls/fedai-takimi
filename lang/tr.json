@@ -133,8 +133,10 @@
     "subtitle": "Fedai Takımı'nın en son haberleri, başarıları ve etkinlikleri"
   },
   "sponsors": {
-    "title": "Sponsorlarımız ve Partnerlerimiz",
-    "subtitle": "Fedai Takımı'nı destekleyen değerli kurumlar"
+    "title": "Fedai Takımı'nın Güçlü Destekçileri",
+    "subtitle": "Projelerimizi hayata geçirmemizi sağlayan ve başarı yolculuğumuzda yanımızda olan değerli destekçilerimiz.",
+    "become_partner": "Partner Olun",
+    "view_all": "Tüm Sponsorlar"
   },
   "newsletter": {
     "title": "Güncel Kalın",

@@ -133,8 +133,10 @@
     "subtitle": "Latest news, achievements and events from Fedai Team"
   },
   "sponsors": {
-    "title": "Our Sponsors and Partners",
-    "subtitle": "Valuable institutions supporting Fedai Team"
+    "title": "Fedai Team's Strong Supporters",
+    "subtitle": "Our valuable supporters who enable us to bring our projects to life and stand by us on our journey to success.",
+    "become_partner": "Become a Partner",
+    "view_all": "All Sponsors"
   },
   "newsletter": {
     "title": "Stay Updated",
