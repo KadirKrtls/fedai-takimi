@@ -534,7 +534,7 @@ body {
 
 .news-badge {
     position: absolute;
-    top: 10px;
+    top: 5px;
     left: 20px;
     background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
     color: white;
@@ -3145,7 +3145,7 @@ td {
     
     /* Haber rozeti daha küçük */
     .news-badge {
-        top: 10px;
+        top: 5px;
         left: 10px;
         padding: 0.3rem 0.6rem;
         font-size: 0.7rem;
@@ -3216,7 +3216,7 @@ td {
     
     /* Haber rozeti responsive */
     .news-badge {
-        top: 15px;
+        top: 8px;
         left: 15px;
         padding: 0.4rem 0.8rem;
         font-size: 0.75rem;
