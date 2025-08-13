@@ -3544,6 +3544,18 @@ td {
     background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
 }
 
+.sponsor-actions .btn-outline {
+    background: transparent;
+    border: 2px solid #6b7280;
+    color: #6b7280;
+}
+
+.sponsor-actions .btn-outline:hover {
+    background: #6b7280;
+    border-color: #6b7280;
+    color: white;
+}
+
 /* Language Switcher */
 .language-switcher {
     position: relative;
