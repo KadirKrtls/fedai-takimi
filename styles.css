@@ -3509,24 +3509,39 @@ td {
 .sponsor-actions {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    margin-top: 3rem;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .sponsor-actions .btn {
-    padding: 1rem 2rem;
+    padding: 1.2rem 2.5rem;
     font-weight: 600;
     border-radius: 30px;
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.75rem;
+    font-size: 1rem;
+    min-width: 200px;
+    justify-content: center;
 }
 
 .sponsor-actions .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.sponsor-actions .btn-primary {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    border: none;
+    color: white;
+}
+
+.sponsor-actions .btn-primary:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
 }
 
 /* Language Switcher */
