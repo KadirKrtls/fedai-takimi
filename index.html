@@ -11,7 +11,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://fedaiteam.com/">
-    <meta property="og:title" content="Fedai - RTÜ İHA Ekibi">
+    <meta property="og:title" content="Fedai Takımı">
     <meta property="og:description" content="Recep Tayyip Erdoğan Üniversitesi İHA Ekibi. İnsansız hava araçları teknolojileri ve projeler.">
     <meta property="og:image" content="https://fedaiteam.com/images/fedai-logo.jpg">
 
@@ -93,59 +93,83 @@
     <main id="main-content">
     <section id="home" class="hero">
         <div class="hero-slider">
-            <div class="slide active" style="background-image: url('images/fedai-takim-lab.jpeg?v=20250809')" data-src="images/fedai-takim-lab.jpeg?v=20250809">
+            <div class="slide news-slide active" style="background-image: url('images/cnn-turk-haber/rize-iha-8.png.webp?v=20250809')" data-src="images/cnn-turk-haber/rize-iha-8.png.webp?v=20250809" onclick="openNewsModal()">
                 <div class="slide-overlay"></div>
                 <div class="slide-content">
-                    <h1 class="hero-title" data-translate="hero.title">Fedai</h1>
-                    <h2>İHA Geliştirme Laboratuvarı</h2>
+                    <div class="news-badge">
+                        <i class="fas fa-newspaper"></i>
+                        <span>HABER</span>
+                    </div>
+                    <h2 class="hero-title" data-translate="hero.title">Fedai</h2>
+                    <h3>CNN Türk'te Yayınlandı!</h3>
                     <p class="hero-subtitle" data-translate="hero.subtitle">Recep Tayyip Erdoğan Üniversitesi İHA Ekibi</p>
-                    <p class="hero-description" data-translate="hero.description">Otonom uçuş sistemleri ve yapay zeka ile İHA teknolojilerini geliştiriyoruz</p>
+                    <p class="hero-description">TUNA-1 İHA projemiz CNN Türk'te "Doğal afetlere Tuna-1 desteği" başlığıyla yayınlandı. Doğal afetlerde kriz yönetimine destek olacak yerli İHA teknolojimiz ulusal televizyonda tanıtıldı.</p>
                     <div class="hero-buttons">
-                        <a href="projects.html" class="btn btn-primary" data-translate="nav.projects">Projelerimiz</a>
-                        <a href="team.html" class="btn btn-secondary" data-translate="nav.team">Takımımız</a>
-                        <a href="contact.html" class="btn btn-outline" data-translate="nav.contact">İletişim</a>
+                        <button class="btn btn-primary news-btn" onclick="openNewsModal()">
+                            <i class="fas fa-play"></i> Haberi İzle
+                        </button>
+                        <a href="projects.html" class="btn btn-secondary" data-translate="nav.projects">Projelerimiz</a>
+                        <a href="team.html" class="btn btn-outline" data-translate="nav.team">Takımımız</a>
                     </div>
                 </div>
             </div>
-            <div class="slide" style="background-image: url('images/fedai-tanitim-ziyaret.jpeg?v=20250809')" data-src="images/fedai-tanitim-ziyaret.jpeg?v=20250809">
+            <div class="slide news-slide" style="background-image: url('images/cnn-turk-haber/rize-iha-3.png.webp?v=20250809')" data-src="images/cnn-turk-haber/rize-iha-3.png.webp?v=20250809" onclick="openNewsModal()">
                 <div class="slide-overlay"></div>
                 <div class="slide-content">
+                    <div class="news-badge">
+                        <i class="fas fa-newspaper"></i>
+                        <span>HABER</span>
+                    </div>
                     <h2 class="hero-title" data-translate="hero.title">Fedai</h2>
-                    <h3>Okul Etkinlikleri ve Tanıtımlar</h3>
+                    <h3>TUNA-1 İHA Teknik Özellikleri</h3>
                     <p class="hero-subtitle" data-translate="hero.subtitle">Recep Tayyip Erdoğan Üniversitesi İHA Ekibi</p>
-                    <p class="hero-description" data-translate="hero.description">Gelecek nesillere İHA teknolojilerini tanıtıyor, bilim ve teknoloji sevgisini aşılıyoruz</p>
+                    <p class="hero-description">TUNA-1 İHA'nın gelişmiş teknik özellikleri ve yenilikçi tasarımı. Dikey kalkış yapabilen, yerli yazılım ile geliştirilen özgün İHA teknolojimiz.</p>
                     <div class="hero-buttons">
-                        <a href="projects.html" class="btn btn-primary" data-translate="nav.projects">Projelerimiz</a>
-                        <a href="team.html" class="btn btn-secondary" data-translate="nav.team">Takımımız</a>
-                        <a href="contact.html" class="btn btn-outline" data-translate="nav.contact">İletişim</a>
+                        <button class="btn btn-primary news-btn" onclick="openNewsModal()">
+                            <i class="fas fa-play"></i> Haberi İzle
+                        </button>
+                        <a href="projects.html" class="btn btn-secondary" data-translate="nav.projects">Projelerimiz</a>
+                        <a href="team.html" class="btn btn-outline" data-translate="nav.team">Takımımız</a>
                     </div>
                 </div>
             </div>
-            <div class="slide" style="background-image: url('images/fedai-iha-montaj-calismasi.png?v=20250808')" data-src="images/fedai-iha-montaj-calismasi.png?v=20250808">
+            <div class="slide news-slide" style="background-image: url('images/cnn-turk-haber/rize-iha-7.png.webp?v=20250809')" data-src="images/cnn-turk-haber/rize-iha-7.png.webp?v=20250809" onclick="openNewsModal()">
                 <div class="slide-overlay"></div>
                 <div class="slide-content">
+                    <div class="news-badge">
+                        <i class="fas fa-newspaper"></i>
+                        <span>HABER</span>
+                    </div>
                     <h2 class="hero-title" data-translate="hero.title">Fedai</h2>
-                    <h3>İHA Montaj ve Üretim Süreçleri</h3>
+                    <h3>Takım Üyelerimizle Birlikte</h3>
                     <p class="hero-subtitle" data-translate="hero.subtitle">Recep Tayyip Erdoğan Üniversitesi İHA Ekibi</p>
-                    <p class="hero-description" data-translate="hero.description">Profesyonel montaj teknikleri ile yüksek kaliteli İHA sistemleri üretiyoruz</p>
+                    <p class="hero-description">TUNA-1 İHA projemizde emeği geçen tüm takım üyelerimiz. Mühendislik öğrencilerimizin başarılı çalışmaları ve takım ruhu ile geliştirdiğimiz projelerimiz.</p>
                     <div class="hero-buttons">
-                        <a href="projects.html" class="btn btn-primary" data-translate="nav.projects">Projelerimiz</a>
-                        <a href="team.html" class="btn btn-secondary" data-translate="nav.team">Takımımız</a>
-                        <a href="contact.html" class="btn btn-outline" data-translate="nav.contact">İletişim</a>
+                        <button class="btn btn-primary news-btn" onclick="openNewsModal()">
+                            <i class="fas fa-play"></i> Haberi İzle
+                        </button>
+                        <a href="projects.html" class="btn btn-secondary" data-translate="nav.projects">Projelerimiz</a>
+                        <a href="team.html" class="btn btn-outline" data-translate="nav.team">Takımımız</a>
                     </div>
                 </div>
             </div>
-            <div class="slide" style="background-image: url('images/fedai-iha-model-sergisi.png?v=20250808')" data-src="images/fedai-iha-model-sergisi.png?v=20250808">
+            <div class="slide news-slide" style="background-image: url('images/cnn-turk-haber/rize-iha-9.png.webp?v=20250809')" data-src="images/cnn-turk-haber/rize-iha-9.png.webp?v=20250809" onclick="openNewsModal()">
                 <div class="slide-overlay"></div>
                 <div class="slide-content">
+                    <div class="news-badge">
+                        <i class="fas fa-newspaper"></i>
+                        <span>HABER</span>
+                    </div>
                     <h2 class="hero-title" data-translate="hero.title">Fedai</h2>
-                    <h3>İHA Model Sergisi ve Tanıtım</h3>
+                    <h3>İHA'nın Uçuş Testleri</h3>
                     <p class="hero-subtitle" data-translate="hero.subtitle">Recep Tayyip Erdoğan Üniversitesi İHA Ekibi</p>
-                    <p class="hero-description" data-translate="hero.description">Geliştirdiğimiz İHA modellerini sergileyerek teknoloji transferi ve bilgi paylaşımı yapıyoruz</p>
+                    <p class="hero-description">TUNA-1 İHA'nın başarılı uçuş testleri ve performans verileri. Afet bölgelerinde kullanılmak üzere geliştirilen İHA'mızın test süreçleri ve elde edilen sonuçlar.</p>
                     <div class="hero-buttons">
-                        <a href="projects.html" class="btn btn-primary" data-translate="nav.projects">Projelerimiz</a>
-                        <a href="team.html" class="btn btn-secondary" data-translate="nav.team">Takımımız</a>
-                        <a href="contact.html" class="btn btn-outline" data-translate="nav.contact">İletişim</a>
+                        <button class="btn btn-primary news-btn" onclick="openNewsModal()">
+                            <i class="fas fa-play"></i> Haberi İzle
+                        </button>
+                        <a href="projects.html" class="btn btn-secondary" data-translate="nav.projects">Projelerimiz</a>
+                        <a href="team.html" class="btn btn-outline" data-translate="nav.team">Takımımız</a>
                     </div>
                 </div>
             </div>
@@ -251,26 +275,32 @@
     </section>
 
     <!-- News Section -->
-    <section class="blog-section">
+    <section class="news-section">
         <div class="container">
             <div class="section-header">
                 <h2 data-translate="news.title">Haberler ve Gelişmeler</h2>
                 <p data-translate="news.subtitle">Fedai Takımı'nın en son haberleri, başarıları ve etkinlikleri</p>
             </div>
-            <div class="blog-grid">
+            <div class="news-grid">
                 <!-- CNN Türk Haberi -->
-                <div class="blog-card" onclick="openNewsModal()" style="cursor: pointer;">
-                    <img src="images/fedai-takim-lab.jpeg?v=20250809" alt="TUNA-1 İHA Haberleri" class="blog-image">
-                    <div class="blog-content">
-                        <div class="blog-date">30 Haziran 2025</div>
-                        <h3 class="blog-title">Doğal afetlere "Tuna-1" desteği</h3>
-                        <p class="blog-excerpt">Recep Tayyip Erdoğan Üniversitesi öğrencileri, danışman hocalarıyla birlikte doğal afetlerde kriz yönetimine destek olacak yeni bir insansız hava aracı geliştirdi.</p>
-                        <div class="blog-tags">
-                            <span class="blog-tag">CNN Türk</span>
-                            <span class="blog-tag">TUNA-1</span>
-                            <span class="blog-tag">Haber</span>
+                <div class="news-card" onclick="openNewsModal()" style="cursor: pointer;">
+                    <div class="news-image-container">
+                        <img src="images/cnn-turk-haber/rize-iha-8.png.webp?v=20250809" alt="TUNA-1 İHA CNN Türk Haberi" class="news-image">
+                        <div class="news-badge-overlay">
+                            <i class="fas fa-newspaper"></i>
+                            <span>HABER</span>
                         </div>
-                        <div class="blog-read-more">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">30 Haziran 2025</div>
+                        <h3 class="news-title">Doğal afetlere "Tuna-1" desteği</h3>
+                        <p class="news-excerpt">Recep Tayyip Erdoğan Üniversitesi öğrencileri, danışman hocalarıyla birlikte doğal afetlerde kriz yönetimine destek olacak yeni bir insansız hava aracı geliştirdi.</p>
+                        <div class="news-tags">
+                            <span class="news-tag">CNN Türk</span>
+                            <span class="news-tag">TUNA-1</span>
+                            <span class="news-tag">Haber</span>
+                        </div>
+                        <div class="news-read-more">
                             <span>Detayları Oku <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>

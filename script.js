@@ -111,6 +111,18 @@ if (heroSlider) {
     });
 }
 
+// News slide click functionality
+const newsSlide = document.querySelector('.news-slide');
+if (newsSlide) {
+    newsSlide.addEventListener('click', (e) => {
+        // Prevent click if clicking on buttons
+        if (e.target.closest('.hero-buttons')) {
+            return;
+        }
+        openNewsModal();
+    });
+}
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -520,7 +532,7 @@ function openNewsModal() {
         </div>
         
         <div class="news-hero-image">
-            <img src="images/cnn-turk-haber/tuna-1-cnn-turk.jpg" alt="TUNA-1 İHA CNN Türk Haberi" class="news-main-image">
+            <img src="images/cnn-turk-haber/rize-iha-3.png.webp" alt="TUNA-1 İHA CNN Türk Haberi" class="news-main-image">
             <div class="news-image-caption">TUNA-1 İHA projemiz CNN Türk'te yayınlandı</div>
         </div>
         
@@ -586,6 +598,32 @@ function openNewsModal() {
                 </div>
             </div>
             
+            <div class="news-gallery">
+                <h3>📸 CNN Türk Haber Görselleri</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/cnn-turk-haber/rize-iha-2.png.webp" alt="TUNA-1 İHA CNN Türk Haberi 1" class="gallery-image">
+                        <div class="gallery-caption">TUNA-1 İHA'nın geliştirilme süreci</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/cnn-turk-haber/rize-iha-3.png.webp" alt="TUNA-1 İHA CNN Türk Haberi 2" class="gallery-image">
+                        <div class="gallery-caption">İHA'nın teknik özellikleri</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/cnn-turk-haber/rize-iha-7.png.webp" alt="TUNA-1 İHA CNN Türk Haberi 3" class="gallery-image">
+                        <div class="gallery-caption">Takım üyelerimizle birlikte</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/cnn-turk-haber/rize-iha-8.png.webp" alt="TUNA-1 İHA CNN Türk Haberi 4" class="gallery-image">
+                        <div class="gallery-caption">Laboratuvar çalışmaları</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/cnn-turk-haber/rize-iha-9.png.webp" alt="TUNA-1 İHA CNN Türk Haberi 5" class="gallery-image">
+                        <div class="gallery-caption">İHA'nın uçuş testleri</div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="news-achievements">
                 <h3>🏆 Başarılarımız</h3>
                 <div class="achievement-item">
@@ -604,21 +642,41 @@ function openNewsModal() {
                 </div>
             </div>
             
-            <div class="news-links">
-                <div class="news-video">
-                    <h4>📺 CNN Türk Haberi (Kısa Versiyon)</h4>
+            <div class="news-videos">
+                <h3>📺 Video Haberler</h3>
+                
+                <div class="video-section">
+                    <h4>CNN Türk Haberi</h4>
                     <p>TUNA-1 İHA projemiz CNN Türk'te detaylı olarak ele alındı. Doğal afetlerde kriz yönetimine destek olacak yerli İHA teknolojimiz.</p>
-                    <a href="https://www.cnnturk.com/video/turkiye/dogal-afetlere-tuna-1-destegi-2304034?dmplayersource=share-send" target="_blank" class="btn btn-primary">
-                        <i class="fas fa-play"></i> Haberi İzle
-                    </a>
+                    <div class="video-container">
+                        <iframe 
+                            src="https://geo.dailymotion.com/player/x9ooc.html?video=x9m2z16&customConfig%5Bdynamiciu%5D=%2F9927946%2C22420855682%2Fcnnturk%2Fsitegeneli&customConfig%5Bkeyvalues%5D=cnnturk_kategori%3Dturkiye%2Cpre%26contentID%3D6861a7103129374d52b1e1ef%2Ccnn_contentid%3D6861a7103129374d52b1e1ef%26vid%3D6861a7103129374d52b1e1ef&customConfig%5Botherparams%5D=pmnd%3D0%26pmxd%3D600000%26pmad%3D1&customConfig%5BcustomParams%5D=pmnd%3D0%26pmxd%3D600000%26pmad%3D1&customConfig%5Bpremium%5D=false&customConfig%5Bplcmt%5D=2&customConfig%5Bvpmute%5D=undefined&mute=true&loop=false" 
+                            frameborder="0" 
+                            allowfullscreen
+                            class="news-video-iframe">
+                        </iframe>
+                    </div>
+                    <div class="video-actions">
+                        <a href="https://geo.dailymotion.com/player/x9ooc.html?video=x9m2z16&customConfig%5Bdynamiciu%5D=%2F9927946%2C22420855682%2Fcnnturk%2Fsitegeneli&customConfig%5Bkeyvalues%5D=cnnturk_kategori%3Dturkiye%2Cpre%26contentID%3D6861a7103129374d52b1e1ef%2Ccnn_contentid%3D6861a7103129374d52b1e1ef%26vid%3D6861a7103129374d52b1e1ef&customConfig%5Botherparams%5D=pmnd%3D0%26pmxd%3D600000%26pmad%3D1&customConfig%5BcustomParams%5D=pmnd%3D0%26pmxd%3D600000%26pmad%3D1&customConfig%5Bpremium%5D=false&customConfig%5Bplcmt%5D=2&customConfig%5Bvpmute%5D=undefined&mute=true&loop=false" target="_blank" class="btn btn-outline">
+                            <i class="fas fa-external-link-alt"></i> CNN Türk'te Aç
+                        </a>
+                    </div>
                 </div>
                 
-                <div class="news-video">
-                    <h4>📺 Taka Gazete Video Haberi</h4>
+                <div class="video-section">
+                    <h4>Taka Gazete Video Haberi</h4>
                     <p>Rize'den Türkiye'ye yerli teknoloji hamlesi Taka Gazete'de video haberi olarak yayınlandı.</p>
-                    <a href="https://takagazetecomtr.tevideo.org/takagazete-com-tr/uploads/2025/06/rize-iha-1-1.mp4" target="_blank" class="btn btn-primary">
-                        <i class="fas fa-play"></i> Video Haberi İzle
-                    </a>
+                    <div class="video-container">
+                        <video controls class="news-video-player">
+                            <source src="https://takagazetecomtr.tevideo.org/takagazete-com-tr/uploads/2025/06/rize-iha-1-1.mp4" type="video/mp4">
+                            Tarayıcınız video oynatmayı desteklemiyor.
+                        </video>
+                    </div>
+                    <div class="video-actions">
+                        <a href="https://takagazetecomtr.tevideo.org/takagazete-com-tr/uploads/2025/06/rize-iha-1-1.mp4" target="_blank" class="btn btn-outline">
+                            <i class="fas fa-download"></i> Videoyu İndir
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
