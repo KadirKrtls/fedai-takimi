@@ -159,8 +159,6 @@ body {
 .chart-level-1 {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
 }
 
 .chart-level-2 {
