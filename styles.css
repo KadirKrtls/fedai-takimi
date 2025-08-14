@@ -159,6 +159,8 @@ body {
 .chart-level-1 {
     display: flex;
     justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .chart-level-2 {
@@ -191,6 +193,16 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
+.chart-item.leader {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: scale(1.1);
+}
+
+.chart-item.leader::before {
+    display: none;
+}
+
 .chart-item.advisor {
     background: linear-gradient(135deg, #059669 0%, #047857 100%);
     color: white;
@@ -219,6 +231,10 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 auto 1rem;
+}
+
+.chart-item.leader .chart-icon {
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .chart-item.advisor .chart-icon {
