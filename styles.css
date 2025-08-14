@@ -3638,13 +3638,13 @@ td {
     transform: translateX(3px);
 }
 
-/* Sponsors Section */
-.sponsors-section {
+/* Partners Section */
+.partners-section {
     padding: 80px 0;
     background: white;
 }
 
-.sponsors-grid {
+.partners-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
@@ -3762,8 +3762,8 @@ td {
     transform: translateX(2px);
 }
 
-/* Sponsor Actions */
-.sponsor-actions {
+/* Partner Actions */
+.partner-actions {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3773,7 +3773,7 @@ td {
     text-align: center;
 }
 
-.sponsor-actions .btn {
+.partner-actions .btn {
     padding: 1.2rem 2.5rem;
     font-weight: 600;
     border-radius: 30px;
@@ -3786,28 +3786,28 @@ td {
     justify-content: center;
 }
 
-.sponsor-actions .btn:hover {
+.partner-actions .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.sponsor-actions .btn-primary {
+.partner-actions .btn-primary {
     background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
     border: none;
     color: white;
 }
 
-.sponsor-actions .btn-primary:hover {
+.partner-actions .btn-primary:hover {
     background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
 }
 
-.sponsor-actions .btn-outline {
+.partner-actions .btn-outline {
     background: transparent;
     border: 2px solid #6b7280;
     color: #6b7280;
 }
 
-.sponsor-actions .btn-outline:hover {
+.partner-actions .btn-outline:hover {
     background: #6b7280;
     border-color: #6b7280;
     color: white;
@@ -3819,9 +3819,9 @@ td {
     margin-left: 20px;
 }
 
-/* Responsive Sponsors */
+/* Responsive Partners */
 @media (max-width: 768px) {
-    .sponsors-grid {
+    .partners-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 1.5rem;
     }
@@ -3849,13 +3849,13 @@ td {
         font-size: 0.85rem;
     }
     
-    .sponsor-actions {
+    .partner-actions {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
     }
     
-    .sponsor-actions .btn {
+    .partner-actions .btn {
         width: 100%;
         max-width: 250px;
         justify-content: center;
