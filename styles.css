@@ -4519,3 +4519,250 @@ td {
         padding: 1.5rem;
     }
 }
+
+/* Team Page Styles */
+.member-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.member-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.tag {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.member-contributions {
+    color: #4b5563;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+    font-style: italic;
+}
+
+/* Advisors Section */
+.advisors-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.advisors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.advisor-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.advisor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.advisor-avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #2563eb;
+}
+
+.advisor-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.advisor-info h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.advisor-title {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.advisor-role {
+    color: #2563eb;
+    font-weight: 500;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Alumni Section */
+.alumni-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.alumni-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.alumni-item {
+    background: #f8fafc;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 1rem;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-left: 4px solid #2563eb;
+}
+
+.alumni-item:hover {
+    background: #e2e8f0;
+    transform: translateX(5px);
+}
+
+.alumni-year {
+    background: #2563eb;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+    min-width: 60px;
+}
+
+.alumni-name {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.alumni-role {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.alumni-current {
+    color: #059669;
+    font-weight: 500;
+    font-size: 0.85rem;
+    text-align: right;
+}
+
+/* Join Team Section */
+.join-team-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: white;
+    text-align: center;
+}
+
+.join-team-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.join-team-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.join-team-btn {
+    background: white !important;
+    color: #2563eb !important;
+    padding: 1rem 2rem !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    border-radius: 30px !important;
+    transition: all 0.3s ease !important;
+}
+
+.join-team-btn:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+    background: #f8fafc !important;
+}
+
+/* Responsive Team Page */
+@media (max-width: 768px) {
+    .advisors-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .alumni-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .alumni-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .alumni-current {
+        text-align: center;
+    }
+    
+    .join-team-content h2 {
+        font-size: 2rem;
+    }
+    
+    .join-team-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .member-tags {
+        justify-content: center;
+    }
+    
+    .advisor-card {
+        padding: 1.5rem;
+    }
+    
+    .advisor-avatar {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .alumni-item {
+        padding: 1rem;
+    }
+    
+    .join-team-btn {
+        padding: 0.8rem 1.5rem !important;
+        font-size: 1rem !important;
+    }
+}
