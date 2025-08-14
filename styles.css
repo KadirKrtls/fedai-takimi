@@ -4590,6 +4590,7 @@ td {
     text-align: center;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
+    position: relative;
 }
 
 .advisor-card:hover {
@@ -4653,6 +4654,9 @@ td {
     text-decoration: none;
     transition: all 0.3s ease;
     font-size: 1rem;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
 }
 
 .advisor-social .social-link:hover {
