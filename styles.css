@@ -4629,6 +4629,34 @@ td {
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+
+.advisor-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.advisor-social .social-link {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.advisor-social .social-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
 }
 
 /* Alumni Section */
