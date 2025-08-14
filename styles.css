@@ -191,13 +191,13 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-.chart-item.leader {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+.chart-item.advisor {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
     color: white;
     transform: scale(1.1);
 }
 
-.chart-item.leader::before {
+.chart-item.advisor::before {
     display: none;
 }
 
@@ -221,7 +221,7 @@ body {
     margin: 0 auto 1rem;
 }
 
-.chart-item.leader .chart-icon {
+.chart-item.advisor .chart-icon {
     background: rgba(255, 255, 255, 0.2);
 }
 
