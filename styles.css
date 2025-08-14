@@ -159,6 +159,8 @@ body {
 .chart-level-1 {
     display: flex;
     justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .chart-level-2 {
@@ -4758,6 +4760,12 @@ td {
 
 /* Responsive Team Page */
 @media (max-width: 768px) {
+    .chart-level-1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
     .advisors-grid {
         grid-template-columns: 1fr;
     }
